@@ -6,6 +6,8 @@
 
 html,
 body {
+  width: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   background: #fff;
@@ -34,12 +36,12 @@ a {
 }
 
 .content {
-  width: 1640px;
+  max-width: 1640px;
   border-left: 1px #e2e5e9 solid;
 }
 
 .container__main {
-  width: 1480px;
+  max-width: 1480px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 80px;
@@ -60,14 +62,14 @@ a {
 }
 
 .aside__logo {
-  width: 216px;
+  /* width: 216px; */
   height: 70px;
   margin-bottom: 40px;
 }
 
 .choose {
   display: flex;
-  width: 216px;
+  /* width: 216px; */
   height: 50px;
   margin-bottom: 32px;
   padding: 3px 2px 3px 3px;
@@ -107,7 +109,7 @@ a {
 .services {
   margin-bottom: 48px;
   display: flex;
-  width: 216px;
+  /* width: 216px; */
   flex-direction: column;
   gap: 20px;
 }
@@ -198,12 +200,12 @@ a {
 }
 
 .category__item {
-  width: 318px;
+  max-width: 318px;
   background: #fff7f5;
 }
 
 .category__item-long {
-  width: 384px;
+  max-width: 384px;
   color: #b00c2f;
 }
 
