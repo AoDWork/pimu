@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIMU</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
     <link rel="stylesheet" href="./css/main.css">
     <!-- <link rel="stylesheet" href="./css/media.css"> -->
 </head>
@@ -32,20 +34,23 @@
                     <img src="./img/aside/personal.svg" alt="">
                     Личный кабинет
                 </a>
-                <a class="reception" href="">
-                    <img src="./img/aside/reception.svg" alt="">
+                <a class="sign" href="">
+                    <img src="./img/aside/sign.svg" alt="">
                     Записаться на прием
                 </a>
             </div>
             <div class="social">
                 <a class="social__item" href="">
                     <img src="./img/social/telegram.svg" alt="">
+                    <img src="./img/social/telegram-hover.svg" alt="">
                 </a>
                 <a class="social__item" href="">
-                    <img class="social__item" src="./img/social/vk.svg" alt="">
+                    <img src="./img/social/vk.svg" alt="">
+                    <img src="./img/social/vk-hover.svg" alt="">
                 </a>
                 <a class="social__item" href="">
-                    <img class="social__item" src="./img/social/youtube.svg" alt="">
+                    <img src="./img/social/youtube.svg" alt="">
+                    <img src="./img/social/youtube-hover.svg" alt="">
                 </a>
             </div>
         </aside>
@@ -61,7 +66,7 @@
                     <a class="category__item" href=""><img src="./img/header/mental-health.png" alt="">Ментальное
                         здоровье</a>
                 </div>
-                <div class="navigation">
+                <nav class="navigation">
                     <div class="navigation-list">
                         <a class="navigation-list__item" href="">Расписание</a>
                         <a class="navigation-list__item" href="">Новости</a>
@@ -80,17 +85,28 @@
                             <img src="./img/header/gaze.svg" alt="">
                             Для слабовидящих
                         </div>
-                        <div class="search">
-                            <img src="./img/header/search.svg" alt="">
-                        </div>
+                        <img class="search" src="./img/header/search.svg" alt="">
                     </div>
-                </div>
+                </nav>
             </header>
 
             <main>
-                <section>
-
-                </section>
+                <div class="container__main">
+                    <article class="slider">
+                        <div class="slider__item">
+                            <img src="./img/main/slide1.png" alt="">
+                        </div>
+                        <div class="slider__item">
+                            <img src="./img/main/slide2.png" alt="">
+                        </div>
+                        <div class="slider__item">
+                            <img src="./img/main/slide3.png" alt="">
+                        </div>
+                        <div class="slider__item">
+                            <img src="./img/main/slide4.png" alt="">
+                        </div>
+                    </article>
+                </div>
             </main>
 
             <footer class="footer">
@@ -99,6 +115,9 @@
         </div>
     </div>
     <!-- libraries and plugins -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- Self scripsts and libraries -->
     <script src="./js/main.js"></script>
 </body>
