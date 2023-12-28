@@ -59,13 +59,25 @@
 /* main slider */
 .slider {
     position: relative;
-    height: 533px;
+    /* height: 533px; */
 }
 
 .slider__item {
-    text-align: center;
+    position: relative;
+    height: 533px;
+    /* text-align: center; */
+    clip-path: polygon(0.00% 12%, 0.25% 10%, 1% 7.8%, 1.5% 7.2%,
+            50.00% 0%,
+            98.5% 7.2%, 99% 7.8%, 99.75% 10%, 100.00% 12%,
+            100.00% 84%, 99.7% 87%, 99.35% 88%, 98.75% 89%,
+            50.00% 99.00%,
+            1.25% 89%, 0.65% 88%, 0.3% 87%, 0% 84%);
     z-index: 1 !important;
     /* при использовании fade*/
+}
+
+.slider__item img {
+    width: 100%;
 }
 
 .slider .slick-arrow {
@@ -107,24 +119,25 @@
 }
 
 /* Точки (булиты) */
-.slider__controls .slick-dots {
+.slider__dots .slick-dots {
     position: absolute;
-    /* top: 112px;
-    left: 112px; */
+    top: 112px;
+    left: 112px;
     min-width: 92px;
     height: 24px;
     margin: 0;
     padding: 8px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* z-index: 10; */
+    z-index: 10;
     gap: 14px;
     border-radius: 19px;
     background: #fff;
 }
 
-.slider__controls .slick-dots li {
+.slider__dots .slick-dots li {
     /* margin: 0 7px; */
     list-style: none;
     width: 8px;
@@ -133,7 +146,7 @@
     background-color: #E2E5E9;
 }
 
-.slider-track {
+/* .slider-track {
     position: absolute;
     right: 45px;
     top:100px;
@@ -143,9 +156,9 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
-}
+} */
 
-.slider-track .slick-dots {
+/* .slider-track .slick-dots {
 
     border-radius: 50%;
     border: 2px solid #fff;
@@ -154,22 +167,19 @@
 }
 
 .slider-track .slick-dots li {
-    /* margin: 0 7px; */
     list-style: none;
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background-color: #E2E5E9;
-}
+} */
 
 /* Активная точка */
-.slider__controls .slick-dots li.slick-active,
-.slider-track .slick-dots li.slick-active{
+.slider__dots .slick-dots li.slick-active {
     background-color: #EF3340;
 }
 
 /* Элемент точки */
-.slider__controls .slick-dots li button,
-.slider-track .slick-dots li button {
+.slider__dots .slick-dots li button {
     display: none;
 }
