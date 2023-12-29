@@ -146,34 +146,6 @@
     background-color: #E2E5E9;
 }
 
-/* .slider-track {
-    position: absolute;
-    right: 45px;
-    top:100px;
-    width: 48px;
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-} */
-
-/* .slider-track .slick-dots {
-
-    border-radius: 50%;
-    border: 2px solid #fff;
-  
-
-}
-
-.slider-track .slick-dots li {
-    list-style: none;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #E2E5E9;
-} */
-
 /* Активная точка */
 .slider__dots .slick-dots li.slick-active {
     background-color: #EF3340;
@@ -182,4 +154,45 @@
 /* Элемент точки */
 .slider__dots .slick-dots li button {
     display: none;
+}
+
+/* circle progress bar */
+
+.progress-container {
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    z-index: 998;
+}
+
+.circular-progress {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: conic-gradient(#ff0000 3.6deg, white 0deg);
+    /* z-index: 998; */
+}
+
+.circular-progress::before {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #c3f5f4;
+    /* z-index: 998; */
+}
+
+.progress-value {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    color: #77797B;
+    /* z-index: 998; */
 }
