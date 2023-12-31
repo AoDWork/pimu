@@ -1,13 +1,50 @@
 $(document).ready(function () {
-    $('.slider').slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
-        dots: true,
-        draggable: false,
-        waitForAnimate: false,
-        centerMode: false,
-        variableWidth: false,
-        fade: true,
-        appendDots:$('.slider__dots'),
-    });
+  const slickSlider = $('.slick-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+    dots: true,
+    draggable: false,
+    waitForAnimate: false,
+    centerMode: false,
+    variableWidth: false,
+    fade: true,
+    appendDots: $('.slider__dots'),
+  });
+
+  const progressBar = document.querySelector('.progress-circle');
+  const progressText = document.querySelector('.progress-text');
+  const duration = slickSlider.slick('slickGetOption', 'autoplaySpeed'); // Длительность автопрокрутки в миллисекундах
+  const circumference = 2 * Math.PI * 20; // Длина окружности круга
+
+  function updateProgress() {
+    let currentTime = 0;
+    const interval = 180; // Интервал обновления прогресса
+
+    const progressInterval = setInterval(() => {
+      currentTime += interval;
+      const progress = (currentTime / duration) * 100;
+      const currentSlide = slickSlider.slick('slickCurrentSlide') + 1;
+
+      const offset = circumference - (progress / 100) * circumference;
+
+      progressBar.style.strokeDashoffset = offset;
+      progressText.textContent = `${currentSlide}/${slickSlider.slick('getSlick').slideCount}`;
+
+      if (currentTime >= duration) {
+        clearInterval(progressInterval);
+        progressBar.style.strokeDashoffset = circumference; // Сброс заполнения круга на начальное значение
+      }
+    }, interval);
+
+    progressBar.style.strokeDashoffset = circumference; // Сброс заполнения круга на начальное значение
+  }
+
+  $('.slick-slider').on('afterChange', () => {
+    updateProgress();
+  });
+
+  updateProgress();
 });
