@@ -15,7 +15,9 @@ $(document).ready(function () {
   });
 
   const progressBar = document.querySelector('.progress-circle');
-  const progressText = document.querySelector('.progress-text');
+  // const progressText = document.querySelector('.progress-text');
+  const textCurrent = document.querySelector('.text__current');
+  const textTotal = document.querySelector('.text__total');
   const duration = slickSlider.slick('slickGetOption', 'autoplaySpeed'); // Длительность автопрокрутки в миллисекундах
   const circumference = 2 * Math.PI * 20; // Длина окружности круга
 
@@ -31,7 +33,8 @@ $(document).ready(function () {
       const offset = circumference - (progress / 100) * circumference;
 
       progressBar.style.strokeDashoffset = offset;
-      progressText.textContent = `${currentSlide}/${slickSlider.slick('getSlick').slideCount}`;
+      textCurrent.textContent = `${currentSlide}`
+      textTotal.textContent = `/${slickSlider.slick('getSlick').slideCount}`;
 
       if (currentTime >= duration) {
         clearInterval(progressInterval);
