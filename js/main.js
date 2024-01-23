@@ -1,7 +1,7 @@
 $(document).ready(function () {
   const slickSlider = $('.slick-slider').slick({
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 5000,
     pauseOnFocus: false,
     pauseOnHover: false,
     pauseOnDotsHover: false,

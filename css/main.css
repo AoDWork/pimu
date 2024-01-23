@@ -48,7 +48,7 @@ a {
 }
 
 img {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .none {
@@ -173,7 +173,7 @@ img {
 }
 
 .sign:hover {
-  background-color: #EF3340;
+  background-color: #ef3340;
 }
 
 .social {
@@ -279,7 +279,6 @@ img {
 }
 
 .navigation-list {
-  /* margin-right: 123px; */
   width: 774px;
   display: flex;
   align-items: center;
@@ -297,7 +296,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  color: #219F9D;
+  color: #219f9d;
 }
 
 .navigation-list__item img {
@@ -314,8 +313,8 @@ img {
   gap: 8px;
   flex-shrink: 0;
   border-radius: 8px;
-  background: linear-gradient(90deg, #FFF2ED 0.01%, #FFE1E1 99.99%);
-  color: #B00C2F;
+  background: linear-gradient(90deg, #fff2ed 0.01%, #ffe1e1 99.99%);
+  color: #b00c2f;
 }
 
 .navigation-tools {
@@ -366,7 +365,6 @@ phone img {
   z-index: 10;
 }
 
-
 /* slider-top*/
 .slider-top {
   position: relative;
@@ -377,7 +375,6 @@ phone img {
   top: 112px;
   left: 112px;
   width: 545px;
-  /* min-height: 252px; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -389,10 +386,20 @@ phone img {
   font-size: 40px;
   font-weight: 600;
   line-height: 140%;
+
+  -webkit-line-clamp: 2; /* Число отображаемых строк */
+  display: -webkit-box; /* Включаем флексбоксы */
+  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  overflow: hidden; /* Обрезаем всё за пределами блока */
 }
 
 .slider__descr {
   margin-top: 32px;
+
+  -webkit-line-clamp: 2; /* Число отображаемых строк */
+  display: -webkit-box; /* Включаем флексбоксы */
+  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  overflow: hidden; /* Обрезаем всё за пределами блока */
 }
 
 .slider__button {
@@ -409,10 +416,94 @@ phone img {
   line-height: 140%;
 }
 
-/* .slider__button img {
-  height: 20px;
-} */
-
 .slider__button:hover {
-  background: #EF3340;
+  background: #ef3340;
+}
+
+.institutes {
+  position: absolute;
+  top: 98%;
+  height: 219px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: url(../img/main/institutes/institute-back.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: #fff;
+  filter: drop-shadow(0px 0px 25px rgba(140, 149, 193, 0.25));
+}
+
+.institute__item {
+  width: 296px;
+  height: 219px;
+  padding: 24px;
+  padding-top: 69px;
+  clip-path: polygon(
+    0% 6%,
+    1% 3%,
+    3% 1%,
+    5% 0%,
+    100% 8.5%,
+    100% 100%,
+    5% 100%,
+    3% 99%,
+    1% 97%,
+    0% 94%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  /* flex-shrink: 0; */
+}
+
+.institute__item:nth-of-type(2) {
+  clip-path: polygon(0% 8.5%, 100% 17.5%, 100% 100%, 0% 100%);
+}
+.institute__item:nth-of-type(3) {
+  clip-path: polygon(50% 22%, 100% 17.5%, 100% 100%, 0% 100%, 0% 17.5%);
+}
+.institute__item:nth-of-type(4) {
+  clip-path: polygon(0% 17.5%, 100% 8.5%, 100% 100%, 0% 100%);
+}
+.institute__item:nth-of-type(5) {
+  clip-path: polygon(
+    0% 8.5%,
+    94% 0%,
+    97% 1%,
+    99% 3%,
+    100% 6%,
+    100% 94%,
+    99% 97%,
+    97% 99%,
+    94% 100%,
+    0% 100%
+  );
+}
+
+.institute__item:hover {
+  background-color: #FFF5F3;
+}
+
+.institute__item-img {
+  width: 64px;
+  height: 64px;
+}
+
+.institute__item-text {
+  height: 50px;
+  color: #2c3136;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.18px;
+
+  -webkit-line-clamp: 2; /* Число отображаемых строк */
+  display: -webkit-box; /* Включаем флексбоксы */
+  -webkit-box-orient: vertical; /* Вертикальная ориентация */
+  overflow: hidden; /* Обрезаем всё за пределами блока */
 }
