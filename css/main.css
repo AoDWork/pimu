@@ -368,6 +368,7 @@ phone img {
 /* slider-top*/
 .slider-top {
   position: relative;
+  margin-bottom: 315px;
 }
 
 .slider__controls {
@@ -459,16 +460,68 @@ phone img {
   /* flex-shrink: 0; */
 }
 
+.institute__item:hover {
+  background-color: #fff5f3;
+}
+.institute__item:hover .institute__item-text {
+  transform: translateY(-20px);
+  color: #b00c2f;
+}
+.institute__item img:nth-of-type(2) {
+  display: none;
+}
+.institute__item:hover img:nth-of-type(1) {
+  display: none;
+}
+.institute__item:hover img:nth-of-type(2) {
+  display: block;
+  transform: translateY(-20px);
+}
+
 .institute__item:nth-of-type(2) {
+  position: relative;
   clip-path: polygon(0% 8.5%, 100% 17.5%, 100% 100%, 0% 100%);
 }
+.institute__item:nth-of-type(2):before {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 200px;
+  bottom: 2px;
+  left: 0px;
+  background: #e2e5e9;
+}
+
 .institute__item:nth-of-type(3) {
+  position: relative;
   clip-path: polygon(50% 22%, 100% 17.5%, 100% 100%, 0% 100%, 0% 17.5%);
 }
+.institute__item:nth-of-type(3):before {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 200px;
+  bottom: 2px;
+  left: 0px;
+  background: #e2e5e9;
+}
+
 .institute__item:nth-of-type(4) {
+  position: relative;
   clip-path: polygon(0% 17.5%, 100% 8.5%, 100% 100%, 0% 100%);
 }
+.institute__item:nth-of-type(4):before {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 200px;
+  bottom: 2px;
+  left: 0px;
+  background: #e2e5e9;
+}
+
 .institute__item:nth-of-type(5) {
+  position: relative;
   clip-path: polygon(
     0% 8.5%,
     94% 0%,
@@ -482,9 +535,14 @@ phone img {
     0% 100%
   );
 }
-
-.institute__item:hover {
-  background-color: #FFF5F3;
+.institute__item:nth-of-type(5):before {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 200px;
+  bottom: 2px;
+  left: 0px;
+  background: #e2e5e9;
 }
 
 .institute__item-img {
@@ -506,4 +564,14 @@ phone img {
   display: -webkit-box; /* Включаем флексбоксы */
   -webkit-box-orient: vertical; /* Вертикальная ориентация */
   overflow: hidden; /* Обрезаем всё за пределами блока */
+}
+
+h2 {
+  color: var(--text-2-c-3136, #2c3136);
+  /* Desktop/40 px, Semibold */
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 56px */
 }
