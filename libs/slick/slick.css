@@ -72,12 +72,12 @@
 }
 
 /* main slider */
-.slick-slider {
+.slider-top .slick-slider {
   position: relative;
   /* height          : 533px; */
 }
 
-.slider__item {
+.slider-top .slider__item {
   position: relative;
   height: 533px;
   /* text-align          : center; */
@@ -105,7 +105,7 @@
   /* при использовании fade*/
 }
 
-.slider__item img {
+.slider-top .slider__item img {
   width: 100%;
 }
 
@@ -134,8 +134,8 @@
   background: #fff url("../../img/main/arrow-right.svg") center / 9px no-repeat;
 }
 
-.slick-arrow.slick-prev:hover,
-.slick-arrow.slick-next:hover {
+.slider-top.slick-arrow.slick-prev:hover,
+.slider-top.slick-arrow.slick-next:hover {
   border: 5px solid #f3dbe0;
 }
 
@@ -150,7 +150,7 @@
 }
 
 /* Точки (булиты) */
-.slider__dots .slick-dots {
+.slider-top .slider__dots .slick-dots {
   position: absolute;
   top: 112px;
   left: 112px;
@@ -168,7 +168,7 @@
   background: #fff;
 }
 
-.slider__dots .slick-dots li {
+.slider-top .slider__dots .slick-dots li {
   /* margin: 0 7px; */
   list-style: none;
   width: 8px;
@@ -178,26 +178,16 @@
 }
 
 /* Активная точка */
-.slider__dots .slick-dots li.slick-active {
+.slider-top .slider__dots .slick-dots li.slick-active {
   background-color: #ef3340;
 }
 
 /* Элемент точки */
-.slider__dots .slick-dots li button {
+.slider-top .slider__dots .slick-dots li button {
   display: none;
 }
 
-/* circle progress bar */
-/* .slider-top {
-  position: relative;
-  margin: 0 auto;
-} */
-
-/* .slick-slider {
-  width: 100%;
-} */
-
-.progress-bar {
+.slider-top .progress-bar {
   position: absolute;
   top: 16.5%;
   right: 0.5%;
@@ -206,11 +196,11 @@
   height: 48px;
 }
 
-.progress-ring {
+.slider-top .progress-ring {
   transform: rotate(-90deg);
 }
 
-.progress-circle {
+.slider-top .progress-circle {
   fill: none;
   stroke: red;
   stroke-width: 2px;
@@ -223,13 +213,13 @@
   transition: stroke-dashoffset 0.3s;
 }
 
-.background-circle {
+.slider-top .background-circle {
   fill: none;
   stroke: white;
   stroke-width: 2px;
 }
 
-.progress-text {
+.slider-top .progress-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -240,10 +230,10 @@
   /* Цвет текста */
 }
 
-.text__current {
+.slider-top .text__current {
   color: red;
 }
 
-.text__total {
+.slider-top .text__total {
   
 }
