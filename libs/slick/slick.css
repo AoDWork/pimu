@@ -126,12 +126,12 @@
 
 .slider-top .slick-arrow.slick-prev {
   left: 0;
-  background: #fff url("../../img/main/arrow-left.svg") center / 9px no-repeat;
+  background: #fff url("../../img/main/top-slider/arrow-left.svg") center / 9px no-repeat;
 }
 
 .slider-top .slick-arrow.slick-next {
   right: 0;
-  background: #fff url("../../img/main/arrow-right.svg") center / 9px no-repeat;
+  background: #fff url("../../img/main/top-slider/arrow-right.svg") center / 9px no-repeat;
 }
 
 .slider-top.slick-arrow.slick-prev:hover,

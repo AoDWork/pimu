@@ -13,6 +13,15 @@ $(document).ready(function () {
     fade: true,
     appendDots: $('.slider__dots'),
   });
+  $('.news-content').slick({
+    slidesToShow: 4,
+    autoplay: false,
+    draggable: false,
+    waitForAnimate: false,
+    centerMode: false,
+    variableWidth: false,
+    fade: false,
+  });
 
   const progressBar = document.querySelector('.progress-circle');
   // const progressText = document.querySelector('.progress-text');
