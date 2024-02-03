@@ -126,12 +126,14 @@
 
 .slider-top .slick-arrow.slick-prev {
   left: 0;
-  background: #fff url("../../img/main/top-slider/arrow-left.svg") center / 9px no-repeat;
+  background: #fff url("../../img/main/top-slider/arrow-left.svg") center / 9px
+    no-repeat;
 }
 
 .slider-top .slick-arrow.slick-next {
   right: 0;
-  background: #fff url("../../img/main/top-slider/arrow-right.svg") center / 9px no-repeat;
+  background: #fff url("../../img/main/top-slider/arrow-right.svg") center / 9px
+    no-repeat;
 }
 
 .slider-top.slick-arrow.slick-prev:hover,
@@ -225,15 +227,25 @@
   left: 50%;
   display: flex;
   transform: translate(-50%, -50%);
-  font-size: 12px;
-  color: #3498db;
-  /* Цвет текста */
+  font-size: 14px;
 }
 
 .slider-top .text__current {
-  color: red;
+  position: absolute;
+  left: -14px;
+  top: -15px;
+  /* text-align: center; */
+  /* font-family: Lato; */
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  color: rgb(239, 51, 64);
 }
 
 .slider-top .text__total {
-  
+  position: absolute;
+  left: -1px;
+  top: -10px;
+  /* text-align: center; */
+  color: rgb(119, 121, 123);
 }

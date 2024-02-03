@@ -15,6 +15,8 @@ $(document).ready(function () {
   });
   $('.news-content').slick({
     slidesToShow: 4,
+    // centerMode: true,
+    // variableWidth: true,
     autoplay: false,
     draggable: false,
     waitForAnimate: false,
