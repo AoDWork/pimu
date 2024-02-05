@@ -467,6 +467,7 @@ phone img {
 }
 
 .institute__item:hover {
+  cursor: pointer;
   background-color: #fff5f3;
   transition: all 0.3s;
 }
@@ -629,6 +630,7 @@ h2 {
   border: 5px solid #f3dbe0;
   background: linear-gradient(90deg, #fff8f6 0.01%, #ffeded 99.99%);
   box-shadow: 0px 0px 8px 0px rgba(217, 176, 176, 0.25);
+  cursor: pointer;
 }
 
 .advantages-item:hover .advantages-item__link {
@@ -757,6 +759,7 @@ h2 {
 }
 
 .news-content {
+  position: relative;
   width: 1560px;
   height: 392px;
   z-index: 50;
@@ -964,4 +967,20 @@ h2 {
   line-height: 140%;
   letter-spacing: 0px;
   text-align: left;
+}
+
+.item__link:hover,
+.item-paper:hover {
+  box-sizing: border-box;
+  color: rgb(176, 12, 47);
+
+  border: 1px solid rgb(255, 237, 237);
+  background: linear-gradient(
+    95.19deg,
+    rgb(255, 248, 246) 56.235%,
+    rgb(255, 237, 237) 99.889%
+  );
+}
+.item__link:hover .link-text {
+  color: rgb(176, 12, 47);
 }
