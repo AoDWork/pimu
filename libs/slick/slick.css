@@ -141,16 +141,6 @@
   border: 5px solid #f3dbe0;
 }
 
-.slick-arrow.slick-prev:active {
-  background: url("../../img/main/arrow-left.svg") center / 9px no-repeat,
-    linear-gradient(90deg, #fff8f6 56.22%, #ffeded 99.8%);
-}
-
-.slick-arrow.slick-next:active {
-  background: url("../../img/main/arrow-right.svg") center / 9px no-repeat,
-    linear-gradient(90deg, #fff8f6 56.22%, #ffeded 99.8%);
-}
-
 /* Точки (булиты) */
 .slider-top .slider__dots .slick-dots {
   position: absolute;
@@ -256,25 +246,31 @@
   height: 48px;
   margin: -24px -24px 0 -24px;
 
-
   font-size: 0;
   border: 1px solid rgb(226, 229, 233);
   border-radius: 10px;
 
   box-shadow: 0px 0px 8px 0px rgba(217, 176, 176, 0.25);
   background: rgb(255, 255, 255);
-  /* z-index: 999; */
 }
 
-.news .slick-prev{
-  left: 1154px;
+.news .slick-arrow.slick-prev {
+  left: 1160px;
   top: -52px;
-  background: #fff url("../../img/main/top-slider/arrow-left.svg") no-repeat center / 9px
+  background: #fff url("../../img/main/top-slider/arrow-left.svg") no-repeat
+    center / 9px;
 }
 
-.news .slick-next{
-  left: 1226px;
+.news .slick-arrow.slick-next {
+  left: 1232px;
   top: -52px;
   background: #fff url("../../img/main/top-slider/arrow-right.svg") center / 9px
-  no-repeat;
+    no-repeat;
+}
+
+.slick-arrow:hover {
+  cursor: pointer;
+  border: 5px solid rgb(243, 219, 224);
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 0px rgba(217, 176, 176, 0.25);
 }
