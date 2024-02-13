@@ -269,9 +269,12 @@
 .news .slick-prev{
   left: 1154px;
   top: -52px;
+  background: #fff url("../../img/main/top-slider/arrow-left.svg") no-repeat center / 9px
 }
 
 .news .slick-next{
   left: 1226px;
   top: -52px;
+  background: #fff url("../../img/main/top-slider/arrow-right.svg") center / 9px
+  no-repeat;
 }

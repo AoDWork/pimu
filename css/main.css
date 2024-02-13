@@ -795,18 +795,21 @@ h2 {
   left: 0;
 }
 
-.news-content__item:nth-child(1n) img {
+.news-content:nth-child(1n) img {
   top: -120px;
 }
-.news-content__item:nth-child(2n) img {
+.news-content:nth-child(2n) img {
   top: -56px;
   left: 15px;
   transform: scale(1.07);
 }
-.news-content__item:nth-child(3n) img {
-  top: -35px;
+.news-content:nth-child(3n) img {
+  /* top: -35px; */
 }
 .news-content__item:nth-child(4n) img {
+  top: -120px;
+}
+.news-content__item:nth-child(5n) img {
   top: -120px;
 }
 
