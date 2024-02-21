@@ -663,7 +663,7 @@ h2 {
   width: 1640px;
   height: 600px;
   margin-bottom: 104px;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 
   display: inline-flex;
   flex-direction: column;
@@ -682,7 +682,7 @@ h2 {
   z-index: 1;
 }
 
-.after {
+.overlay {
   position: absolute;
   width: 1613px;
   height: 100%;
@@ -998,4 +998,44 @@ h2 {
 }
 .item__link:hover .link-text {
   color: rgb(176, 12, 47);
+}
+
+/* feedback */
+.feedback {
+}
+.feedback__head {
+}
+.feedback__title {
+}
+.feedback__button {
+}
+.feedback__content {
+}
+.feedback__category {
+}
+.category-item {
+}
+.feedback__slider {
+}
+.feedback__card {
+}
+.card__head {
+}
+.card__photo {
+}
+.card__descr {
+}
+.card__user {
+}
+.card__info {
+}
+.card__rate {
+}
+.card__date {
+}
+.date__img {
+}
+.date__text {
+}
+.card__text {
 }
