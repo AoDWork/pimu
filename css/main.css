@@ -720,7 +720,8 @@ h2 {
   gap: 48px;
 }
 
-.news-header__all {
+.news-header__button,
+.feedback__button {
   display: flex;
   height: 48px;
   padding: 11px 24px;
@@ -742,7 +743,8 @@ h2 {
   line-height: 140%; /* 22.4px */
 }
 
-.news-header__all:hover {
+.news-header__button:hover,
+.feedback__button:hover {
   cursor: pointer;
 
   background: linear-gradient(
@@ -1002,19 +1004,100 @@ h2 {
 
 /* feedback */
 .feedback {
+  width: 1480px;
+  height: 496px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 104px;
 }
+
 .feedback__head {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .feedback__title {
+  color: rgb(44, 49, 54);
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 140%;
+  /* letter-spacing: 0%; */
+  /* text-align: left; */
 }
 .feedback__button {
 }
+
 .feedback__content {
+  height: 304px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
 }
+
 .feedback__category {
+  width: 337px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px;
+
+  border: 1px solid rgb(226, 229, 233);
+  border-radius: 12px;
+  /* BG/#F8FBFB */
+  background: rgb(248, 251, 251);
 }
 .category-item {
+  width: 289px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding: 17px 16px 17px 16px;
+
+  /* Stroke/#E2E5E9 */
+  border: 1px solid rgb(226, 229, 233);
+  border-radius: 8px;
+  /* Text/#FFFFFF */
+  background: rgb(255, 255, 255);
+
+  color: rgb(44, 49, 54);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
 }
+
+.category-item:hover {
+  /* Color/#B00C2F */
+  background: rgb(176, 12, 47);
+  color: #fff;
+}
+.category-item img:nth-of-type(2) {
+  display: none;
+}
+.category-item:hover img:nth-of-type(1) {
+  display: none;
+}
+.category-item:hover img:nth-of-type(2) {
+  display: block;
+}
+
+
+.category-item__img {
+  width: 40px;
+  height: 40px;
+}
+
+
 .feedback__slider {
 }
 .feedback__card {
