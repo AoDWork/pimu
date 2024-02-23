@@ -1091,34 +1091,81 @@ h2 {
   display: block;
 }
 
-
 .category-item__img {
   width: 40px;
   height: 40px;
 }
 
-
 .feedback__slider {
+  position: relative;
+  width: 1095px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
 }
+
 .feedback__card {
+  width: 1015px;
+  height: 235px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
+
 .card__head {
+  width: 1015px;
+  height: 65px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
 }
+
 .card__photo {
+  width: 65px;
+  height: 65px;
 }
+
 .card__descr {
+  width: 935px;
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
 }
 .card__user {
 }
 .card__info {
+  width: 935px;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .card__rate {
 }
 .card__date {
+  width: 123px;
+  height: 22px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .date__img {
 }
 .date__text {
 }
 .card__text {
+  width: 1015px;
+  height: 154px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
