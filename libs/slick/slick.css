@@ -277,15 +277,14 @@
 
 /* ================= */
 /* feedback slider */
-.feedback .slick-list .slick-track {
+.feedback__slider .slick-slide {
+  display: flex;
+}
+
+.feedback .slick-list {
   width: 1095px;
   height: 304px;
 }
-
-/* .feedback .slick-track {
-  width: 1095px;
-  height: 304px;
-} */
 
 /* arrows */
 .feedback .slick-arrow {
@@ -303,14 +302,14 @@
 }
 
 .feedback .slick-arrow.slick-prev {
-  left: 0px;
+  left: -360px;
   top: 364px;
   background: #fff url("../../img/main/top-slider/arrow-left.svg") no-repeat
     center / 9px;
 }
 
 .feedback .slick-arrow.slick-next {
-  left: 150px;
+  left: 1070px;
   top: 364px;
   background: #fff url("../../img/main/top-slider/arrow-right.svg") center / 9px
     no-repeat;
@@ -324,10 +323,10 @@
 }
 
 /* Точки (булиты) */
-.feedback__slider .feedback__dots .slick-dots {
+.feedback__dots .slick-dots {
   position: absolute;
-  top: 112px;
-  left: 112px;
+  left: 667px;
+  top: 352px;
   min-width: 92px;
   height: 24px;
   margin: 0;
@@ -341,7 +340,7 @@
   border-radius: 19px;
   background: #fff;
 }
-.feedback__slider .feedback__dots .slick-dots li {
+.feedback__dots .slick-dots li {
   /* margin: 0 7px; */
   list-style: none;
   width: 8px;
@@ -350,10 +349,10 @@
   background-color: #e2e5e9;
 }
 /* Активная точка */
-.feedback__slider .feedback__dots .slick-dots li.slick-active {
+.feedback__dots .slick-dots li.slick-active {
   background-color: #ef3340;
 }
 /* Элемент точки */
-.feedback__slider .feedback__dots .slick-dots li button {
+.feedback__dots .slick-dots li button {
   display: none;
 }

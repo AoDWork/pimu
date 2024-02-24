@@ -24,19 +24,19 @@ $(document).ready(function () {
     variableWidth: false,
     fade: false,
   });
-  // $('.feedback__slider').slick({
-  //   slidesToShow: 1,
-  //   // centerMode: true,
-  //   // variableWidth: true,
-  //   autoplay: false,
-  //   dots: true,
-  //   draggable: false,
-  //   waitForAnimate: false,
-  //   centerMode: false,
-  //   variableWidth: false,
-  //   fade: false,
-  //   appendDots: $('.feedback__dots'),
-  // });
+  $('.feedback__slider').slick({
+    slidesToShow: 1,
+    // centerMode: true,
+    // variableWidth: true,
+    autoplay: false,
+    dots: true,
+    draggable: false,
+    waitForAnimate: false,
+    centerMode: false,
+    variableWidth: false,
+    fade: false,
+    appendDots: $('.feedback__dots'),
+  });
 
   const progressBar = document.querySelector('.progress-circle');
   // const progressText = document.querySelector('.progress-text');
