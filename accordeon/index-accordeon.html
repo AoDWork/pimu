@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .accordion__item {
+      width: 724px;
+      height: 92px;
+      display: flex;
+      flex-direction: column;
+      padding: 24px 0px 24px 0px;
+
+      /* background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s; */
+    }
+
+    .active,
+    .accordion__item:hover {
+      background-color: #ccc;
+    }
+
+    .accordion__item:after {
+      content: '>';
+      color: #777;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .active:after {
+      content: "<";
+    }
+
+    .descr {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="accordion">
+    <button class="accordion__item">Section 1</button>
+    <div class="descr">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+    <button class="accordion__item">Section 2</button>
+    <div class="descr">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+    <button class="accordion__item">Section 3</button>
+    <div class="descr">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion__item");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var descr = this.nextElementSibling;
+        if (descr.style.maxHeight) {
+          descr.style.maxHeight = null;
+        } else {
+          descr.style.maxHeight = descr.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .questions__content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .question {
+      width: 724px;
+      height: 92px;
+      display: flex;
+      padding: 24px 18px 24px 0px;
+      /* margin: 18px 0; */
+    }
+
+    .active,
+    .question:hover {
+      background-color: #ccc;
+    }
+
+    .question:after {
+      content: '';
+      width: 48px;
+      height: 48px;
+      margin-right: 5px;
+      float: right;
+      background: url('../img/main/questions/arrow-left.svg');
+      color: #777;
+      font-weight: bold;
+    }
+
+    .active:after {
+      content: "";
+    }
+
+    .descr {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="questions__content">
+    <button class="question">Section 1</button>
+    <div class="descr">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+    <button class="question">Section 2</button>
+    <div class="descr">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+    <button class="question">Section 3</button>
+    <div class="descr">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+    </div>
+
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("question");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var descr = this.nextElementSibling;
+        if (descr.style.maxHeight) {
+          descr.style.maxHeight = null;
+        } else {
+          descr.style.maxHeight = descr.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+</body>
+
+</html>

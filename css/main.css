@@ -1203,10 +1203,11 @@ h2 {
 /* questions */
 .questions {
   height: 567px;
-  left: 360px;
+  margin-bottom: 104px;
+  /* left: 360px;
   right: 80px;
   top: 2902px;
-  bottom: 1884px;
+  bottom: 1884px; */
 
   display: flex;
   flex-direction: column;
@@ -1237,30 +1238,35 @@ h2 {
 }
 
 .questions__content {
+  width: 1480px;
   height: 463px;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start;
-  align-items: flex-start; */
+  gap: 32px;
   flex-wrap: wrap;
-
-  /* flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 48px 0px; */
 }
 
 .question {
+  position: relative;
   width: 724px;
   height: 92px;
-  padding: 24px 0px 24px 0px;
-  /* Автолейаут */
+  padding: 24px 0px 24px 32px;
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  gap: 32px;
+  align-items: center;
+
+  border: none;
+  border-top: 1px solid rgb(226, 229, 233);
+  border-radius: 12px;
+  /* BG/#F8FBFB */
+  background: rgb(248, 251, 251);
+
+  color: rgb(44, 49, 54);
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 1%;
 
   /* Inside Auto Layout */
   /* flex: none;
@@ -1268,24 +1274,45 @@ h2 {
   align-self: stretch;
   flex-grow: 0;
   margin: 32px 0px; */
+}
 
-  /* box-sizing: border-box; */
+.active,
+.question:hover {
+  background-color: #ccc;
+}
+
+.question:after {
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: 32px;
+  margin-right: 5px;
+  /* float: right; */
+  background: #fff url("../img/main/questions/arrow-left.svg") center / 9px
+    no-repeat;
+  rotate: -90deg;
+
   /* Stroke/#E2E5E9 */
-  border-top: 1px solid rgb(226, 229, 233);
-  border-radius: 12px;
-  /* BG/#F8FBFB */
-  background: rgb(248, 251, 251);
-}
-.question-active .question__descr {
-  display: block;
+  border: 0.93px solid rgb(226, 229, 233);
+  border-radius: 9.29px;
+  /* Drop Shadow */
+  box-shadow: 0px 0px 7.43px 0px rgba(217, 176, 176, 0.25);
 }
 
-.question__head {
+.active:after {
+  content: "";
+  rotate: 90deg;
 }
-.question__title {
+
+.descr {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
-.question__button {
-}
-.question__descr {
-  display: none;
+
+.descr p {
+  width: 660px;
 }

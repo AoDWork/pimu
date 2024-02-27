@@ -75,3 +75,19 @@ $(document).ready(function () {
 
   updateProgress();
 });
+
+// accordion
+var acc = document.getElementsByClassName("question");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var descr = this.nextElementSibling;
+    if (descr.style.maxHeight) {
+      descr.style.maxHeight = null;
+    } else {
+      descr.style.maxHeight = descr.scrollHeight + "px";
+    }
+  });
+}
