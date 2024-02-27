@@ -77,7 +77,7 @@ $(document).ready(function () {
 });
 
 // accordion
-var acc = document.getElementsByClassName("question");
+var acc = document.getElementsByClassName("question__head");
 var i;
 
 for (i = 0; i < acc.length; i++) {
