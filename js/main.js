@@ -87,7 +87,13 @@ for (i = 0; i < acc.length; i++) {
     if (descr.style.maxHeight) {
       descr.style.maxHeight = null;
     } else {
-      descr.style.maxHeight = descr.scrollHeight + "px";
+      descr.style.maxHeight = "124px";
     }
   });
 }
+
+let defaultActive = acc[0]
+defaultActive.classList.toggle("active")
+defaultActive.nextElementSibling.style.maxHeight = "124px"
+
+console.log(defaultActive)
