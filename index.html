@@ -701,22 +701,27 @@
                 вопросы
               </div>
               <div class="support__info">
-                <div class="info__text"></div>
+                <div class="info__text">Колл-центр</div>
                 <div class="info__phone">
                   <img src="./img/main/support/phone.svg" alt="" />
-                  <a href="tel:+73910000000">+7 (391) 000-00-00</a>
+                  <a class="tel" href="tel:+73910000000">+7 (391) 000-00-00</a>
                 </div>
               </div>
             </div>
+
             <div class="support__form" action="">
-              <input type="text" name="name" placeholder="Ваше имя">
-              <input type="email" name="first_name" placeholder="Ваша почта">
-              <textarea id="w3review" name="textarea" rows="4" cols="50" placeholder="">
-                Текстовое сообщение
-              </textarea>
-              <input type="submit" value="Submit" />
-              <div class="policy">Нажимая на кнопку, вы даете согласие на обработку персональных данных в соответствии с
-                <a href="">политикой конфиденциальности</a></div>
+              <div class="personal">
+                <input class="text" type="text" name="name" placeholder="Ваше имя">
+                <input class="email" type="email" name="first_name" placeholder="Ваша почта">
+              </div>
+              <textarea class="textarea" name="textarea" placeholder="Текстовое сообщение"></textarea>
+              <div class="submit">
+                <input class="submit__button" type="submit" value="Отправить вопрос" />
+                <div class="submit__policy">Нажимая на кнопку, вы даете согласие<br>на обработку персональных
+                  данных<br>в соответствии с
+                  <a href="">политикой конфиденциальности</a>
+                </div>
+              </div>
             </div>
           </section>
 
