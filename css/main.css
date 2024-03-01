@@ -1388,23 +1388,18 @@ hr {
   display: flex;
 
   border-radius: 16px;
-  background: radial-gradient(
-    876% 43% at 43% 50%,
-    rgb(224, 255, 255),
-    rgb(232, 253, 252) 44%,
-    rgb(197, 247, 245) 100%
-  );
+  background: url('../img/main/support/back+.jpg');
   overflow: hidden;
 }
-.support::after {
+/* .support::after {
   content: "";
-  background: url("../img/main/support/sign.svg");
+  background: url("../img/main/support/sign-.svg");
   width: 259.61px;
   height: 606.68px;
   position: absolute;
   right: 118px;
-  top: -100px;
-}
+  top: 0px;
+} */
 
 .support__content {
   width: 299px;
@@ -1413,31 +1408,16 @@ hr {
 
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start;
-  align-items: flex-start; */
-
-  /* Inside Auto Layout */
-  /* flex: none;
-  order: 0;
-  flex-grow: 0; */
 }
 .support__title {
   height: 45px;
   margin-bottom: 16px;
-
-  /* display: flex;
-  align-items: center; */
 
   color: rgb(44, 49, 54);
   font-family: Lato;
   font-size: 32px;
   font-weight: 600;
   line-height: 140%;
-
-  /* Inside Auto Layout */
-  /* flex: none;
-  order: 0;
-  flex-grow: 0; */
 }
 .support__descr {
   height: 66px;
@@ -1452,18 +1432,6 @@ hr {
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
-
-  /* Автолейаут */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start; */
-
-  /* Inside Auto Layout */
-  /* flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 16px 0px; */
 }
 .support__info {
   width: 192px;
@@ -1472,7 +1440,6 @@ hr {
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 
   border-left: 3px solid rgb(176, 12, 47);
   border-radius: 3px;
@@ -1487,24 +1454,11 @@ hr {
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
-
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  /* padding: 0px 0px 0px 24px; */
-
-  /* Inside Auto Layout */
-  /* flex: none;
-  order: 0;
-  flex-grow: 0; */
 }
 .info__phone {
   /* height: 22px; */
 
   display: flex;
-  /* flex-direction: row; */
-  /* justify-content: flex-start; */
   align-items: center;
   gap: 10px;
 }
@@ -1564,8 +1518,8 @@ hr {
 .personal .email:focus,
 textarea:focus {
   outline: 0;
-  /* outline-offset: 0; */
   border: 1px solid rgb(63, 194, 192);
+  color: #2c3136;
 }
 
 .textarea {
@@ -1605,6 +1559,11 @@ textarea:focus {
 }
 .submit__button:hover {
   cursor: pointer;
+  outline: 4px solid rgb(255, 248, 246);
+}
+.submit__button:active {
+  background: rgb(239, 51, 64);
+  outline: none;
 }
 .submit__policy {
   width: 327px;
