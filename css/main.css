@@ -1388,7 +1388,7 @@ hr {
   display: flex;
 
   border-radius: 16px;
-  background: url('../img/main/support/back+.jpg');
+  background: url("../img/main/support/back+.jpg");
   overflow: hidden;
 }
 /* .support::after {
@@ -1579,7 +1579,176 @@ textarea:focus {
   justify-content: flex-start;
   align-items: center; */
 }
-
 .submit__policy a {
   color: rgb(176, 12, 47);
+}
+
+/* === */
+/* map */
+.map {
+  width: 1480px;
+  height: 550px;
+  margin-bottom: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* ====== */
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__main {
+  width: 1640px;
+  height: 525px;
+  padding: 56px 80px;
+  display: flex;
+  flex-direction: column;
+
+  /* BG/#F8FBFB */
+  background: rgb(248, 251, 251);
+}
+
+.footer__content {
+  height: 264px;
+  margin-bottom: 42px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(226, 229, 233);
+}
+
+.footer__logos {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+.logo-clinic {
+  width: 216px;
+  height: 70px;
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+.logo-clinic img {
+  width: 70px;
+  height: 70px;
+}
+.logo-clinic__text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.logo-rate {
+  width: 288px;
+  height: 104px;
+}
+
+.footer__controls {
+  width: 614px;
+  height: 186px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 18px 80px;
+}
+.controls__link {
+  height: 22px;
+  max-width: 212px;
+  /* margin-bottom: 18px; */
+  display: flex;
+  align-items: center;
+
+  color: rgb(44, 49, 54);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.controls__link:nth-child(13n),
+.controls__link:nth-child(14n) {
+  height: 44px;
+}
+
+.footer__info {
+  width: 361px;
+  height: 218px;
+
+  display: flex;
+  flex-direction: column;
+}
+.sign {
+  margin-bottom: 32px;
+}
+.info__contacts {
+  width: 361px;
+  height: 138px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.feedback-call {
+  width: 324px;
+  height: 28px;
+  display: flex;
+}
+.info__phone {
+
+}
+.tel {
+  color: red;
+  /* font-family: Lato; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.feedback-call__text {
+}
+.email {
+}
+.social {
+}
+.social__item {
+}
+.footer__policy {
+}
+.policy__links {
+}
+.policy__vision {
+}
+.links {
+}
+.link {
+}
+.footer__license {
+}
+.license__text {
+}
+.license-img {
+}
+
+.footer__bottom {
+  width: 1640px;
+  height: 85px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 80px 20px 80px;
+
+  color: rgb(202, 209, 216);
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 3.2px;
+  /* text-align: center; */
+  text-transform: uppercase;
 }
