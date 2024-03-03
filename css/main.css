@@ -1457,7 +1457,6 @@ hr {
 }
 .info__phone {
   /* height: 22px; */
-
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1661,7 +1660,6 @@ textarea:focus {
 .controls__link {
   height: 22px;
   max-width: 212px;
-  /* margin-bottom: 18px; */
   display: flex;
   align-items: center;
 
@@ -1679,11 +1677,10 @@ textarea:focus {
 .footer__info {
   width: 361px;
   height: 218px;
-
   display: flex;
   flex-direction: column;
 }
-.sign {
+.footer__info .sign {
   margin-bottom: 32px;
 }
 .info__contacts {
@@ -1698,38 +1695,102 @@ textarea:focus {
   width: 324px;
   height: 28px;
   display: flex;
+  gap: 24px;
 }
-.info__phone {
+.feedback-call .info__phone {
+  width: 168px;
+  padding-bottom: 5px;
+}
+.info__phone .tel {
+  color: rgb(119, 121, 123);
+  font-weight: 400;
+}
+.feedback-call__text {
+  height: 28px;
+  width: 132px;
+  display: flex;
+  flex-direction: column;
 
-}
-.tel {
-  color: red;
-  /* font-family: Lato; */
+  color: rgb(176, 12, 47);
+  font-family: Lato;
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
 }
-.feedback-call__text {
+.feedback-call__descr {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.feedback-call__text img {
 }
 .email {
+  width: 147px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: rgb(119, 121, 123);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
 }
 .social {
 }
 .social__item {
 }
+
 .footer__policy {
+  display: flex;
+  flex-direction: column;
 }
 .policy__links {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 29px;
 }
 .policy__vision {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: rgb(44, 49, 54);
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.policy__vision img {
+  width: 29px;
+  height: 28px;
 }
 .links {
+  display: flex;
+  gap: 48px;
 }
 .link {
+  color: rgb(119, 121, 123);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
 }
 .footer__license {
+  /* margin-bottom: 56px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .license__text {
+  color: rgb(119, 121, 123);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
 }
 .license-img {
 }
