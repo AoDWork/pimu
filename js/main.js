@@ -1,5 +1,6 @@
+// sliders
 $(document).ready(function () {
-  const slickSlider = $('.slick-slider').slick({
+  const slickSlider = $(".slick-slider").slick({
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnFocus: false,
@@ -11,12 +12,10 @@ $(document).ready(function () {
     centerMode: false,
     variableWidth: false,
     fade: true,
-    appendDots: $('.slider__dots'),
+    appendDots: $(".slider__dots"),
   });
-  $('.news-content').slick({
+  $(".news-content").slick({
     slidesToShow: 4,
-    // centerMode: true,
-    // variableWidth: true,
     autoplay: false,
     draggable: false,
     waitForAnimate: false,
@@ -24,10 +23,8 @@ $(document).ready(function () {
     variableWidth: false,
     fade: false,
   });
-  $('.feedback__slider').slick({
+  $(".feedback__slider").slick({
     slidesToShow: 1,
-    // centerMode: true,
-    // variableWidth: true,
     autoplay: false,
     dots: true,
     draggable: false,
@@ -35,14 +32,13 @@ $(document).ready(function () {
     centerMode: false,
     variableWidth: false,
     fade: false,
-    appendDots: $('.feedback__dots'),
+    appendDots: $(".feedback__dots"),
   });
 
-  const progressBar = document.querySelector('.progress-circle');
-  // const progressText = document.querySelector('.progress-text');
-  const textCurrent = document.querySelector('.text__current');
-  const textTotal = document.querySelector('.text__total');
-  const duration = slickSlider.slick('slickGetOption', 'autoplaySpeed'); // Длительность автопрокрутки в миллисекундах
+  const progressBar = document.querySelector(".progress-circle");
+  const textCurrent = document.querySelector(".text__current");
+  const textTotal = document.querySelector(".text__total");
+  const duration = slickSlider.slick("slickGetOption", "autoplaySpeed"); // Длительность автопрокрутки в миллисекундах
   const circumference = 2 * Math.PI * 20; // Длина окружности круга
 
   function updateProgress() {
@@ -52,13 +48,13 @@ $(document).ready(function () {
     const progressInterval = setInterval(() => {
       currentTime += interval;
       const progress = (currentTime / duration) * 100;
-      const currentSlide = slickSlider.slick('slickCurrentSlide') + 1;
+      const currentSlide = slickSlider.slick("slickCurrentSlide") + 1;
 
       const offset = circumference - (progress / 100) * circumference;
 
       progressBar.style.strokeDashoffset = offset;
-      textCurrent.textContent = `${currentSlide}`
-      textTotal.textContent = `/${slickSlider.slick('getSlick').slideCount}`;
+      textCurrent.textContent = `${currentSlide}`;
+      textTotal.textContent = `/${slickSlider.slick("getSlick").slideCount}`;
 
       if (currentTime >= duration) {
         clearInterval(progressInterval);
@@ -66,34 +62,67 @@ $(document).ready(function () {
       }
     }, interval);
 
-    progressBar.style.strokeDashoffset = circumference; // Сброс заполнения круга на начальное значение
+    progressBar.style.strokeDashoffset = circumference;
   }
 
-  $('.slick-slider').on('afterChange', () => {
+  $(".slick-slider").on("afterChange", () => {
     updateProgress();
   });
 
   updateProgress();
-});
+})
 
-// accordion
-var acc = document.getElementsByClassName("question__head");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var descr = this.nextElementSibling;
-    if (descr.style.maxHeight) {
-      descr.style.maxHeight = null;
-    } else {
-      descr.style.maxHeight = "124px";
-    }
-  });
+// function set active to tab, onclick listener, remove active from other tabs
+const setActiveTab = (tabs) => {
+  tabs.forEach((item) => {
+    item.addEventListener("click", () => {
+      tabs.forEach((item) => item.classList.remove("active"))
+      item.classList.add("active")
+    })
+  })
 }
 
-let defaultActive = acc[0]
-defaultActive.classList.toggle("active")
-defaultActive.nextElementSibling.style.maxHeight = "124px"
+// tabs age
+const age = document.querySelectorAll(".age__item");
+setActiveTab(age)
 
-console.log(defaultActive)
+// tabs services
+const tabsServices = document.querySelectorAll(".services__item");
+setActiveTab(tabsServices)
+
+//input search
+const phone = document.querySelector(".phone")
+const gaze = document.querySelector(".gaze")
+const search = document.querySelector(".search")
+const searchBlock = document.querySelector(".search-block")
+const searchImg = document.querySelectorAll(".search__img")
+
+search.addEventListener('click', ()=> {
+  searchBlock.style.display = 'flex'
+  phone.style.display = gaze.style.display = search.style.display = 'none'
+})
+
+searchImg.forEach((item) => {
+  item.addEventListener('click', ()=> {
+    console.log(searchBlock)
+    searchBlock.style.display = 'none'
+    phone.style.display = gaze.style.display = search.style.display = 'flex'
+  })
+})
+
+
+// accordion questions
+const acc = document.querySelectorAll(".question__head")
+const allDescr = document.querySelectorAll(".descr")
+acc[0].nextElementSibling.style.maxHeight = "124px"
+
+acc.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    allDescr.forEach((item) => item.style.maxHeight = null )
+    acc.forEach((item) => item.classList.remove("active"))
+    
+    e.target.classList.add("active")
+    e.target.nextElementSibling.style.maxHeight = "124px"
+  })
+})

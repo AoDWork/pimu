@@ -17,39 +17,51 @@
       <div class="aside__logo">
         <img src="./img/aside/logo.png" alt="" />
       </div>
-      <div class="choose">
-        <button class="adult active">Взрослым</button>
-        <button class="children">Детям</button>
+      <div class="age">
+        <button class="age__item active">Взрослым</button>
+        <button class="age__item">Детям</button>
       </div>
       <div class="services">
-        <div class="services__title">
-          <img src="./img/aside/tablet.svg" alt="" />Услуги и цены
+        <div class="services__item active">
+          <img src="./img/aside/service.svg" alt="" />Услуги и цены
         </div>
-        <div class="services__item">Врачи</div>
-        <div class="services__item">Пациентам</div>
-        <div class="services__item">Контакты</div>
-        <div class="services__item">О клинике</div>
+        <hr>
+        <div class="services__item">
+          <img src="./img/aside/doctor.svg" alt="" />Врачи
+        </div>
+        <hr>
+        <div class="services__item">
+          <img src="./img/aside/patient.svg" alt="" />Пациентам
+        </div>
+        <hr>
+        <div class="services__item">
+          <img src="./img/aside/contacts.svg" alt="" />Контакты
+        </div>
+        <hr>
+        <div class="services__item">
+          <img src="./img/aside/clinic.svg" alt="" />О клинике
+        </div>
       </div>
       <div class="aside-controls">
-        <a class="personal" href="">
+        <a class="personal" href="#">
           <img src="./img/aside/personal.svg" alt="" />
           Личный кабинет
         </a>
-        <a class="sign" href="">
+        <a class="sign" href="#">
           <img src="./img/aside/sign.svg" alt="" />
           Записаться на прием
         </a>
       </div>
       <div class="social">
-        <a class="social__item" href="">
+        <a class="social__item" href="#">
           <img src="./img/social/telegram.svg" alt="" />
           <img src="./img/social/telegram-hover.svg" alt="" />
         </a>
-        <a class="social__item" href="">
+        <a class="social__item" href="#">
           <img src="./img/social/vk.svg" alt="" />
           <img src="./img/social/vk-hover.svg" alt="" />
         </a>
-        <a class="social__item" href="">
+        <a class="social__item" href="#">
           <img src="./img/social/youtube.svg" alt="" />
           <img src="./img/social/youtube-hover.svg" alt="" />
         </a>
@@ -59,37 +71,48 @@
     <div class="content">
       <header class="header">
         <div class="categories">
-          <a class="category__item" href=""><img src="./img/header/pediatrics.png" alt="" />Педиатрия</a>
-          <a class="category__item" href=""><img src="./img/header/dentistry.png" alt="" />Стоматология</a>
-          <a class="category__item" href=""><img src="./img/header/rehabilitation.png" alt="" />Реабилитация</a>
-          <a class="category__item-long" href=""><img src="./img/header/institute.png" alt="" />Институт
+          <a class="category__item" href="#"><img src="./img/header/pediatrics.png" alt="" />Педиатрия</a>
+          <a class="category__item" href="#"><img src="./img/header/dentistry.png" alt="" />Стоматология</a>
+          <a class="category__item" href="#"><img src="./img/header/rehabilitation.png" alt="" />Реабилитация</a>
+          <a class="category__item-long" href="#"><img src="./img/header/institute.png" alt="" />Институт
             травматологии и ортопедии
           </a>
-          <a class="category__item" href=""><img src="./img/header/mental-health.png" alt="" />Ментальное
+          <a class="category__item" href="#"><img src="./img/header/mental-health.png" alt="" />Ментальное
             здоровье</a>
         </div>
         <nav class="navigation">
           <div class="navigation-list">
-            <a class="navigation-list__item" href="">Расписание</a>
-            <a class="navigation-list__item" href="">Новости</a>
-            <a class="navigation-list__item" href="">Отзывы</a>
-            <a class="navigation-list__item" href="">Документы</a>
-            <a class="navigation-list__item" href="">Вопросы и ответы</a>
-            <a class="navigation-list__item" href="">Университет ПИМУ<img src="./img/header/arrow-right.png"
-                alt="" /></a>
+            <a class="navigation-list__item" href="#">Расписание</a>
+            <a class="navigation-list__item" href="#">Новости</a>
+            <a class="navigation-list__item" href="#">Отзывы</a>
+            <a class="navigation-list__item" href="#">Документы</a>
+            <a class="navigation-list__item" href="#">Вопросы и ответы</a>
+            <a class="navigation-list__item" href="#">Университет ПИМУ
+              <img src="./img/header/arrow-right.png" alt="" />
+              <img src="./img/header/arrow-right-hover.svg" alt="">
+            </a>
           </div>
           <div class="navigation-tools">
             <div class="navigation-tools__item phone">
               <img src="./img/header/phone.svg" alt="" />
               <a href="tel:+73910000000">+7 (391) 000-00-00</a>
             </div>
-            <div class="navigation-tools__item gaze">
+            <a class="navigation-tools__item gaze">
               <img src="./img/header/gaze.svg" alt="" />
+              <img src="./img/header/gaze-click.svg" alt="" />
               Для слабовидящих
-            </div>
-            <div class="navigation-tools__item search">
+            </a>
+            <button class="navigation-tools__item search">
               <img src="./img/header/search.svg" alt="" />
-            </div>
+              <img src="./img/header/search-hov.png" alt="" />
+            </button>
+            <form class="search-block" action="#">
+              <input class="search__input" type="text" name="search" placeholder="Поиск по сайту">
+              <button class="search-button">
+                <img  class="search__img" src="./img/header/search-input-inactive.svg" alt="" />
+                <img  class="search__img" src="./img/header/search-input-hover.svg" alt="" />
+              </button>
+            </form>
           </div>
         </nav>
       </header>
@@ -171,46 +194,46 @@
               </svg>
             </div>
             <div class="institutes">
-              <div class="institute__item">
+              <a class="institute__item" href="#">
                 <img class="institute__item-img" src="./img/main/institutes/pediatrics.png" alt="" />
                 <img class="institute__item-img" src="./img/main/institutes/pediatrics-hover.svg" alt="" />
                 <div class="institute__item-text">
                   Институт<br />
                   педиатрии
                 </div>
-              </div>
-              <div class="institute__item">
+              </a>
+              <a class="institute__item" href="#">
                 <img class="institute__item-img" src="./img/main/institutes/stomatology.png" alt="" />
                 <img class="institute__item-img" src="./img/main/institutes/stomatology-hover.svg" alt="" />
                 <div class="institute__item-text">
                   Институт<br />
                   стоматологии
                 </div>
-              </div>
-              <div class="institute__item">
+              </a>
+              <a class="institute__item" href="#">
                 <img class="institute__item-img" src="./img/main/institutes/rehabilitation.png" alt="" />
                 <img class="institute__item-img" src="./img/main/institutes/rehabilitation-hover.svg" alt="" />
                 <div class="institute__item-text">
                   Институт<br />
                   реабилитации
                 </div>
-              </div>
-              <div class="institute__item">
+              </a>
+              <a class="institute__item" href="#">
                 <img class="institute__item-img" src="./img/main/institutes/orthopedics.png" alt="" />
                 <img class="institute__item-img" src="./img/main/institutes/orthopedics-hover.svg" alt="" />
                 <div class="institute__item-text">
                   Институт травматологии<br />
                   и ортопедии
                 </div>
-              </div>
-              <div class="institute__item">
+              </a>
+              <a class="institute__item" href="#">
                 <img class="institute__item-img" src="./img/main/institutes/mental.svg" alt="" />
                 <img class="institute__item-img" src="./img/main/institutes/mental-hover.svg" alt="" />
                 <div class="institute__item-text">
                   Центр ментального<br />
                   здоровья
                 </div>
-              </div>
+              </a>
             </div>
           </article>
           <section class="advantages">
@@ -227,7 +250,7 @@
                 </div>
                 <div class="advantages-item__descr">Малоинвазивные технологии в травматологии-<br>ортопедии и
                   нейрохирургии</div>
-                <a href="" class="advantages-item__link">Узнать подробнее <img
+                <a href="#" class="advantages-item__link">Узнать подробнее <img
                     src="./img/main/advantages/arrow-right.svg" alt="" /></a>
               </div>
               <div class="advantages-item">
@@ -236,7 +259,7 @@
                   <div class="advantages-item__title">Наука</div>
                 </div>
                 <div class="advantages-item__descr">Сочетание науки, образования<br>и клинической практики</div>
-                <a href="" class="advantages-item__link">Узнать подробнее <img
+                <a href="#" class="advantages-item__link">Узнать подробнее <img
                     src="./img/main/advantages/arrow-right.svg" alt="" /></a>
               </div>
               <div class="advantages-item">
@@ -245,7 +268,7 @@
                   <div class="advantages-item__title">Полный цикл</div>
                 </div>
                 <div class="advantages-item__descr">Клиника полного цикла: от диагностики<br>до реабилитации</div>
-                <a href="" class="advantages-item__link">Узнать подробнее <img
+                <a href="#" class="advantages-item__link">Узнать подробнее <img
                     src="./img/main/advantages/arrow-right.svg" alt="" /></a>
               </div>
               <div class="advantages-item">
@@ -255,7 +278,7 @@
                 </div>
                 <div class="advantages-item__descr">142 врача клинических отделений, из них 9 докторов медицинских наук,
                   71 кандидат медицинских наук,<br>12 кандидатов биологических наук, 39 врачей с высшей категорией</div>
-                <a href="" class="advantages-item__link">Узнать подробнее <img
+                <a href="#" class="advantages-item__link">Узнать подробнее <img
                     src="./img/main/advantages/arrow-right.svg" alt="" /></a>
               </div>
               <div class="advantages-item">
@@ -265,7 +288,7 @@
                 </div>
                 <div class="advantages-item__descr">Новейшее клиническое, диагностическое<br>и лабораторное оборудование
                 </div>
-                <a href="" class="advantages-item__link">Узнать подробнее <img
+                <a href="#" class="advantages-item__link">Узнать подробнее <img
                     src="./img/main/advantages/arrow-right.svg" alt="" /></a>
               </div>
             </div>
@@ -275,7 +298,7 @@
             <div class="news-header">
               <h2 class="news-header__title">Новости</h2>
               <div class="news-header__controls">
-                <a href="" class="news-header__button">Смотреть все</a>
+                <a href="#" class="news-header__button">Смотреть все</a>
                 <div class="news-header__arrows">
                   <div class="arrow__prev"></div>
                   <div class="arrow__next"></div>
@@ -303,7 +326,7 @@
                     <a class="item__link" href="#">
                       <img src="./img/main/news/human.svg" alt="">
                       <img src="./img/main/news/human-hover.svg" alt="">
-                      <div href="" class="link-text">Институт педиатрии</div>
+                      <div class="link-text">Институт педиатрии</div>
                     </a>
                     <a class="item-paper" href="#">Статья</a>
                   </div>
@@ -330,7 +353,7 @@
                     <a class="item__link" href="#">
                       <img src="./img/main/news/human.svg" alt="">
                       <img src="./img/main/news/human-hover.svg" alt="">
-                      <div href="" class="link-text">Институт педиатрии</div>
+                      <div class="link-text">Институт педиатрии</div>
                     </a>
                     <a class="item-paper" href="#">Статья</a>
                   </div>
@@ -357,7 +380,7 @@
                     <a class="item__link" href="#">
                       <img src="./img/main/news/human.svg" alt="">
                       <img src="./img/main/news/human-hover.svg" alt="">
-                      <div href="" class="link-text">Институт педиатрии</div>
+                      <div class="link-text">Институт педиатрии</div>
                     </a>
                     <a class="item-paper" href="#">Статья</a>
                   </div>
@@ -384,7 +407,7 @@
                     <a class="item__link" href="#">
                       <img src="./img/main/news/human.svg" alt="">
                       <img src="./img/main/news/human-hover.svg" alt="">
-                      <div href="" class="link-text">Институт педиатрии</div>
+                      <div class="link-text">Институт педиатрии</div>
                     </a>
                     <a class="item-paper" href="#">Статья</a>
                   </div>
@@ -411,7 +434,7 @@
                     <a class="item__link" href="#">
                       <img src="./img/main/news/human.svg" alt="">
                       <img src="./img/main/news/human-hover.svg" alt="">
-                      <div href="" class="link-text">Институт педиатрии</div>
+                      <div class="link-text">Институт педиатрии</div>
                     </a>
                     <a class="item-paper" href="#">Статья</a>
                   </div>
@@ -422,21 +445,21 @@
           <section class="feedback">
             <div class="feedback__head">
               <h1 class="feedback__title">Отзывы</h1>
-              <a href="" class="feedback__button">Смотреть все</a>
+              <a href="#" class="feedback__button">Смотреть все</a>
             </div>
             <div class="feedback__content">
               <div class="feedback__category">
-                <div href="#" class="category-item">
+                <div class="category-item">
                   <img class="category-item__img" src="./img/main/feedback/feedback.svg" alt="">
                   <img class="category-item__img" src="./img/main/feedback/feedback-hover.svg" alt="">
                   Все отзывы
                 </div>
-                <div href="#" class="category-item">
+                <div class="category-item">
                   <img class="category-item__img" src="./img/main/feedback/doctor.svg" alt="">
                   <img class="category-item__img" src="./img/main/feedback/doctor-hover.svg" alt="">
                   Отзывы о врачах
                 </div>
-                <div href="#" class="category-item">
+                <div class="category-item">
                   <img class="category-item__img" src="./img/main/feedback/clinic.svg" alt="">
                   <img class="category-item__img" src="./img/main/feedback/clinic-hover.svg" alt="">
                   Отзывы о клинике
@@ -461,6 +484,11 @@
                     текст в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк
                     текст в несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст
                     в несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
+                    Текст в несколько строк текст в несколько строк текст в несколько строк текст в Текст в несколько
+                    строк текст в несколько строк текст в несколько строк текст вТекст в несколько строк текст в
+                    несколько строк текст в несколько строк текст в несколько строк Текст в несколько строк текст в
+                    несколько строк текст в несколько строк текст строк текст в несколько строк Текст в несколько строк
+                    текст в несколько строк текст в несколько строк текст строк текст в несколько строк
                     Текст в несколько строк текст в несколько строк текст в несколько строк текст в Текст в несколько
                     строк текст в несколько строк текст в несколько строк текст вТекст в несколько строк текст в
                     несколько строк текст в несколько строк текст в несколько строк Текст в несколько строк текст в
@@ -605,11 +633,11 @@
           <section class="questions">
             <div class="questions__head">
               <h1 class="questions__title">Вопросы и ответы</h1>
-              <a href="" class="questions__button">Смотреть все</a>
+              <a href="#" class="questions__button">Смотреть все</a>
             </div>
             <div class="questions__content">
               <div class="question">
-                <button class="question__head">Вопрос 1</button>
+                <button class="question__head active">Вопрос 1</button>
                 <div class="descr">
                   <hr>
                   <p>Текст 1 в несколько строк текст в несколько строк текст в несколько строк
@@ -736,26 +764,26 @@
                 <img src="./img/footer/clinic.svg" alt="">
                 <div class="logo-clinic__text">УНИВЕСИТЕТСКАЯ<br>КЛИНИКА<br>ПИМУ</div>
               </div>
-              <img class="logo-rate" src="./img/footer/rate.jpg" alt=""></img>
+              <a class="logo-rate" href="#"><img src="./img/footer/rate.jpg" alt=""></img></a>
             </div>
             <div class="footer__controls">
-              <div class="controls__link">Услуги и цены</div>
-              <div class="controls__link">Врачи</div>
-              <div class="controls__link">Пациентам</div>
-              <div class="controls__link">Расписание</div>
-              <div class="controls__link">О клинике</div>
-              <div class="controls__link">Работа в клинике</div>
-              <div class="controls__link">Контакты</div>
-              <div class="controls__link">Новости</div>
-              <div class="controls__link">Вопросы и ответы</div>
-              <div class="controls__link">Отзывы</div>
-              <div class="controls__link">Личный кабинет</div>
-              <div class="controls__link">Документы</div>
-              <div class="controls__link">Сведения о медицинских работниках</div>
-              <div class="controls__link">Контакты контролирующих организаций</div>
+              <a href="#" class="controls__link">Услуги и цены</a>
+              <a href="#" class="controls__link">Врачи</a>
+              <a href="#" class="controls__link">Пациентам</a>
+              <a href="#" class="controls__link">Расписание</a>
+              <a href="#" class="controls__link">О клинике</a>
+              <a href="#" class="controls__link">Работа в клинике</a>
+              <a href="#" class="controls__link">Контакты</a>
+              <a href="#" class="controls__link">Новости</a>
+              <a href="#" class="controls__link">Вопросы и ответы</a>
+              <a href="#" class="controls__link">Отзывы</a>
+              <a href="#" class="controls__link">Личный кабинет</a>
+              <a href="#" class="controls__link">Документы</a>
+              <a href="#" class="controls__link">Сведения о медицинских работниках</a>
+              <a href="#" class="controls__link">Контакты контролирующих организаций</a>
             </div>
             <div class="footer__info">
-              <a class="sign" href="">
+              <a class="sign" href="#">
                 <img src="./img/aside/sign.svg" alt="" />
                 Записаться на прием
               </a>
@@ -774,15 +802,15 @@
                   <img src="./img/footer/email.svg" alt="">почта@почта.ру
                 </div>
                 <div class="social">
-                  <a class="social__item" href="">
+                  <a class="social__item" href="#">
                     <img src="./img/social/telegram.svg" alt="" />
                     <img src="./img/social/telegram-hover.svg" alt="" />
                   </a>
-                  <a class="social__item" href="">
+                  <a class="social__item" href="#">
                     <img src="./img/social/vk.svg" alt="" />
                     <img src="./img/social/vk-hover.svg" alt="" />
                   </a>
-                  <a class="social__item" href="">
+                  <a class="social__item" href="#">
                     <img src="./img/social/youtube.svg" alt="" />
                     <img src="./img/social/youtube-hover.svg" alt="" />
                   </a>
@@ -793,12 +821,16 @@
 
           <div class="footer__policy">
             <div class="policy__links">
-              <div class="policy__vision"><img src="./img/footer/eye.svg" alt="">Для слабовидящих</div>
+              <a class="gaze" href="#">
+                <img src="./img/header/gaze.svg" alt="" />
+                <img src="./img/header/gaze-click.svg" alt="" />
+                Для слабовидящих
+              </a>
               <div class="links">
-                <a href="" class="link">Лицензии</a>
-                <a href="" class="link">Противодействие коррупции</a>
-                <a href="" class="link">Политика конфиденциальности</a>
-                <a href="" class="link">Карта сайта</a>
+                <a href="#" class="link">Лицензии</a>
+                <a href="#" class="link">Противодействие коррупции</a>
+                <a href="#" class="link">Политика конфиденциальности</a>
+                <a href="#" class="link">Карта сайта</a>
               </div>
             </div>
             <div class="footer__license">
