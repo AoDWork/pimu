@@ -83,33 +83,38 @@ const setActiveTab = (tabs) => {
   })
 }
 
+
 // tabs age
 const age = document.querySelectorAll(".age__item");
 setActiveTab(age)
 
+
 // tabs services
 const tabsServices = document.querySelectorAll(".services__item");
 setActiveTab(tabsServices)
+
 
 //input search
 const phone = document.querySelector(".phone")
 const gaze = document.querySelector(".gaze")
 const search = document.querySelector(".search")
 const searchBlock = document.querySelector(".search-block")
-const searchImg = document.querySelectorAll(".search__img")
+const searchBtn = document.querySelector(".search-button")
 
 search.addEventListener('click', ()=> {
   searchBlock.style.display = 'flex'
   phone.style.display = gaze.style.display = search.style.display = 'none'
 })
 
-searchImg.forEach((item) => {
-  item.addEventListener('click', ()=> {
-    console.log(searchBlock)
-    searchBlock.style.display = 'none'
-    phone.style.display = gaze.style.display = search.style.display = 'flex'
-  })
+searchBtn.addEventListener('click', ()=> {
+  searchBlock.style.display = 'none'
+  phone.style.display = gaze.style.display = search.style.display = 'flex'
 })
+
+
+// tabs feedback
+const feedback = document.querySelectorAll(".feedback-item");
+setActiveTab(feedback)
 
 
 // accordion questions
