@@ -12,16 +12,16 @@
 </head>
 
 <body>
-  <div class="page__wrapper">
+  <div class="page-wrapper">
     <aside class="aside">
-      <div class="aside__logo">
+      <a class="aside__logo logo" href="">
         <img src="./img/aside/logo.png" alt="" />
+      </a>
+      <div class="aside__age age">
+        <button class="age__btn active">Взрослым</button>
+        <button class="age__btn">Детям</button>
       </div>
-      <div class="age">
-        <button class="age__item active">Взрослым</button>
-        <button class="age__item">Детям</button>
-      </div>
-      <div class="services">
+      <div class="aside__services services">
         <div class="services__item active">
           <img src="./img/aside/service.svg" alt="" />Услуги и цены
         </div>
@@ -42,12 +42,12 @@
           <img src="./img/aside/clinic.svg" alt="" />О клинике
         </div>
       </div>
-      <div class="aside-controls">
-        <a class="personal" href="#">
+      <div class="aside__controls">
+        <a class="personal-cabinet" href="#">
           <img src="./img/aside/personal.svg" alt="" />
           Личный кабинет
         </a>
-        <a class="sign" href="#">
+        <a class="button-sign" href="#">
           <img src="./img/aside/sign.svg" alt="" />
           Записаться на прием
         </a>
@@ -67,20 +67,19 @@
         </a>
       </div>
     </aside>
-
     <div class="content">
       <header class="header">
-        <div class="categories">
-          <a class="category__item" href="#"><img src="./img/header/pediatrics.png" alt="" />Педиатрия</a>
-          <a class="category__item" href="#"><img src="./img/header/dentistry.png" alt="" />Стоматология</a>
-          <a class="category__item" href="#"><img src="./img/header/rehabilitation.png" alt="" />Реабилитация</a>
-          <a class="category__item-long" href="#"><img src="./img/header/institute.png" alt="" />Институт
+        <div class="header__categories">
+          <a class="header__categories-item" href="#"><img src="./img/header/pediatrics.png" alt="" />Педиатрия</a>
+          <a class="header__categories-item" href="#"><img src="./img/header/dentistry.png" alt="" />Стоматология</a>
+          <a class="header__categories-item" href="#"><img src="./img/header/rehabilitation.png" alt="" />Реабилитация</a>
+          <a class="header__categories-item--long" href="#"><img src="./img/header/institute.png" alt="" />Институт
             травматологии и ортопедии
           </a>
-          <a class="category__item" href="#"><img src="./img/header/mental-health.png" alt="" />Ментальное
+          <a class="header__categories-item" href="#"><img src="./img/header/mental-health.png" alt="" />Ментальное
             здоровье</a>
         </div>
-        <nav class="navigation">
+        <nav class="header__navigation">
           <div class="navigation-list">
             <a class="navigation-list__item" href="#">Расписание</a>
             <a class="navigation-list__item" href="#">Новости</a>
@@ -92,106 +91,105 @@
               <img src="./img/header/arrow-right-hover.svg" alt="">
             </a>
           </div>
-          <div class="navigation-tools">
-            <div class="navigation-tools__item phone">
+          <div class="header__navigation-tools">
+            <div class="header__phone phone">
               <img src="./img/header/phone.svg" alt="" />
               <a href="tel:+73910000000">+7 (391) 000-00-00</a>
             </div>
-            <a class="navigation-tools__item gaze">
+            <a class="gaze">
               <img src="./img/header/gaze.svg" alt="" />
               <img src="./img/header/gaze-click.svg" alt="" />
               Для слабовидящих
             </a>
-            <div class="navigation-tools__item search">
+            <div class="search">
               <img src="./img/header/search.svg" alt="" />
               <img src="./img/header/search-hov.png" alt="" />
             </div>
             <form class="search-block" action="#">
-              <input class="search__input" type="text" name="search" placeholder="Поиск по сайту">
-              <button class="search-button">
-                <img  class="search__img" src="./img/header/search-input-inactive.svg" alt="" />
-                <img  class="search__img" src="./img/header/search-input-hover.svg" alt="" />
-                <img  class="search__img" src="./img/header/search-input-click.svg" alt="" />
+              <input class="search-block__input" type="text" name="search" placeholder="Поиск по сайту">
+              <button class="search-block__button">
+                <img  src="./img/header/search-input-inactive.svg" alt="" />
+                <img  src="./img/header/search-input-hover.svg" alt="" />
+                <img  src="./img/header/search-input-click.svg" alt="" />
               </button>
             </form>
           </div>
         </nav>
       </header>
-
       <main class="main">
         <div class="container__main">
           <article class="slider-top">
-            <div class="slick-slider">
-              <div class="slider__item">
+            <div class="main-slider">
+              <div class="main-slider__item">
                 <img data-lazy="./img/main/top-slider/slide1.jpg" alt="" />
-                <div class="slider__controls">
-                  <div class="slider__title">
+                <div class="main-slider__controls">
+                  <div class="main-slider__title">
                     Какая-либо услуга в две строки
                   </div>
-                  <div class="slider__descr">
+                  <div class="main-slider__text">
                     Текст в несколько строк текст в несколько строк текст в
                     несколько строк текст в несколько строк
                   </div>
-                  <a class="slider__button" href="#">Подробнее
+                  <a class="main-slider__button" href="#">Подробнее
                     <img src="./img/main/top-slider/arrow-button.svg" alt="" />
                   </a>
                 </div>
               </div>
-              <div class="slider__item">
+              <div class="main-slider__item">
                 <img data-lazy="./img/main/top-slider/slide2.jpg" alt="" />
-                <div class="slider__controls">
-                  <div class="slider__title">
+                <div class="main-slider__controls">
+                  <div class="main-slider__title">
                     Какая-либо услуга в две строки
                   </div>
-                  <div class="slider__descr">
+                  <div class="main-slider__text">
                     Текст в несколько строк текст в несколько строк текст в
                     несколько строк текст в несколько строк
                   </div>
-                  <a class="slider__button" href="#">Подробнее
+                  <a class="main-slider__button" href="#">Подробнее
                     <img src="./img/main/top-slider/arrow-button.svg" alt="" />
                   </a>
                 </div>
               </div>
-              <div class="slider__item">
+              <div class="main-slider__item">
                 <img data-lazy="./img/main/top-slider/slide3.jpg" alt="" />
-                <div class="slider__controls">
-                  <div class="slider__title">
+                <div class="main-slider__controls">
+                  <div class="main-slider__title">
                     Какая-либо услуга в две строки
                   </div>
-                  <div class="slider__descr">
+                  <div class="main-slider__text">
                     Текст в несколько строк текст в несколько строк текст в
                     несколько строк текст в несколько строк
                   </div>
-                  <a class="slider__button" href="#">Подробнее
+                  <a class="main-slider__button" href="#">Подробнее
                     <img src="./img/main/top-slider/arrow-button.svg" alt="" />
                   </a>
                 </div>
               </div>
-              <div class="slider__item">
+              <div class="main-slider__item">
                 <img data-lazy="./img/main/top-slider/slide4.jpg" alt="" />
-                <div class="slider__controls">
-                  <div class="slider__title">
+                <div class="main-slider__controls">
+                  <div class="main-slider__title">
                     Какая-либо услуга в две строки
                   </div>
-                  <div class="slider__descr">
+                  <div class="main-slider__text">
                     Текст в несколько строк текст в несколько строк текст в
                     несколько строк текст в несколько строк
                   </div>
-                  <a class="slider__button" href="#">Подробнее
+                  <a class="main-slider__button" href="#">Подробнее
                     <img src="./img/main/top-slider/arrow-button.svg" alt="" />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="slider__dots"></div>
+            <div class="slider-top__dots"></div>
             <div class="progress-bar">
-              <div class="progress-text">
-                <span class="text__current"></span>
-                <div class="text__total"></div>
+              <div class="progress-bar__text">
+                <span class="progress-bar__text-current"></span>
+                <div class="progress-bar__text-total"></div>
               </div>
-              <svg class="progress-ring" width="48" height="48" viewBox="0 0 48 48">
-                <circle class="background-circle" cx="24" cy="24" r="20"></circle>
-                <circle class="progress-circle" cx="24" cy="24" r="20"></circle>
+              <svg class="progress-bar__ring" width="48" height="48" viewBox="0 0 48 48">
+                <circle class="progress-bar__background-circle" cx="24" cy="24" r="20"></circle>
+                <circle class="progress-bar__inner-circle" cx="24" cy="24" r="20"></circle>
               </svg>
             </div>
             <div class="institutes">
@@ -238,206 +236,204 @@
             </div>
           </article>
           <section class="advantages">
-            <div class="advantages-text">
-              <h2 class="advantages-text__title">Преимущества клиники</h2>
-              <div class="advantages-text__descr">Вы можете выделить для себя то, что действительно важно именно для
+            <div class="advantages__header">
+              <h2 class="advantages__title title">Преимущества клиники</h2>
+              <div class="advantages__text">Вы можете выделить для себя то, что действительно важно именно для
                 вас,<br>и на основе этой информации принять решение</div>
             </div>
-            <div class="advantages-items">
-              <div class="advantages-item">
-                <div class="advantages-item__head">
+            <div class="advantages__content">
+              <div class="advantages__content-item">
+                <div class="advantages__content-head">
                   <img src="./img/main/advantages/technologies.svg" alt="" class="advantages-item__img">
-                  <div class="advantages-item__title">Технологии</div>
+                  <div class="advantages__content-title">Технологии</div>
                 </div>
-                <div class="advantages-item__descr">Малоинвазивные технологии в травматологии-<br>ортопедии и
+                <div class="advantages__content-text">Малоинвазивные технологии в травматологии-<br>ортопедии и
                   нейрохирургии</div>
-                <a href="#" class="advantages-item__link">Узнать подробнее <img
+                <a href="#" class="advantages__content-link">Узнать подробнее <img
                     src="./img/main/advantages/arrow-right.svg" alt="" /></a>
               </div>
-              <div class="advantages-item">
-                <div class="advantages-item__head">
+              <div class="advantages__content-item">
+                <div class="advantages__content-head">
                   <img src="./img/main/advantages/science.svg" alt="" class="advantages-item__img">
-                  <div class="advantages-item__title">Наука</div>
+                  <div class="advantages__content-title">Наука</div>
                 </div>
-                <div class="advantages-item__descr">Сочетание науки, образования<br>и клинической практики</div>
-                <a href="#" class="advantages-item__link">Узнать подробнее <img
+                <div class="advantages__content-text">Сочетание науки, образования<br>и клинической практики</div>
+                <a href="#" class="advantages__content-link">Узнать подробнее <img
                     src="./img/main/advantages/arrow-right.svg" alt="" /></a>
               </div>
-              <div class="advantages-item">
-                <div class="advantages-item__head">
+              <div class="advantages__content-item">
+                <div class="advantages__content-head">
                   <img src="./img/main/advantages/cycle.svg" alt="" class="advantages-item__img">
-                  <div class="advantages-item__title">Полный цикл</div>
+                  <div class="advantages__content-title">Полный цикл</div>
                 </div>
-                <div class="advantages-item__descr">Клиника полного цикла: от диагностики<br>до реабилитации</div>
-                <a href="#" class="advantages-item__link">Узнать подробнее <img
+                <div class="advantages__content-text">Клиника полного цикла: от диагностики<br>до реабилитации</div>
+                <a href="#" class="advantages__content-link">Узнать подробнее <img
                     src="./img/main/advantages/arrow-right.svg" alt="" /></a>
               </div>
-              <div class="advantages-item">
-                <div class="advantages-item__head">
+              <div class="advantages__content-item">
+                <div class="advantages__content-head">
                   <img src="./img/main/advantages/doctors.svg" alt="" class="advantages-item__img">
-                  <div class="advantages-item__title">Врачи</div>
+                  <div class="advantages__content-title">Врачи</div>
                 </div>
-                <div class="advantages-item__descr">142 врача клинических отделений, из них 9 докторов медицинских наук,
+                <div class="advantages__content-text">142 врача клинических отделений, из них 9 докторов медицинских наук,
                   71 кандидат медицинских наук,<br>12 кандидатов биологических наук, 39 врачей с высшей категорией</div>
-                <a href="#" class="advantages-item__link">Узнать подробнее <img
+                <a href="#" class="advantages__content-link">Узнать подробнее <img
                     src="./img/main/advantages/arrow-right.svg" alt="" /></a>
               </div>
-              <div class="advantages-item">
-                <div class="advantages-item__head">
+              <div class="advantages__content-item">
+                <div class="advantages__content-head">
                   <img src="./img/main/advantages/equipment.svg" alt="" class="advantages-item__img">
-                  <div class="advantages-item__title">Оборудование</div>
+                  <div class="advantages__content-title">Оборудование</div>
                 </div>
-                <div class="advantages-item__descr">Новейшее клиническое, диагностическое<br>и лабораторное оборудование
+                <div class="advantages__content-text">Новейшее клиническое, диагностическое<br>и лабораторное оборудование
                 </div>
-                <a href="#" class="advantages-item__link">Узнать подробнее <img
+                <a href="#" class="advantages__content-link">Узнать подробнее <img
                     src="./img/main/advantages/arrow-right.svg" alt="" /></a>
               </div>
             </div>
           </section>
           <section class="news">
             <div class="overlay"></div>
-            <div class="news-header">
-              <h2 class="news-header__title">Новости</h2>
-              <div class="news-header__controls">
-                <a href="#" class="news-header__button">Смотреть все</a>
-                <div class="news-header__arrows">
-                  <div class="arrow__prev"></div>
-                  <div class="arrow__next"></div>
+            <div class="news__header">
+              <h2 class="news__title title">Новости</h2>
+              <div class="news__controls">
+                <a href="#" class="news__button btn-all">Смотреть все</a>
+                <div class="news__btn-space">
                 </div>
               </div>
             </div>
-            <div class="news-content">
-              <div class="news-content__item">
-                <div class="item__img">
+            <div class="news-slider">
+              <div class="news-slider__item">
+                <div class="news-slider__item-img">
                   <img data-lazy="./img/main/news/slide1.jpg" alt="" />
                 </div>
-                <div class="item__content">
-                  <div class="item__time">
+                <div class="news-slider__item-content">
+                  <div class="news-slider__item-time">
                     <img src="./img/main/news/clock.svg" alt="">
-                    <div class="date">25.05.2023</div>
+                    <div class="news-slider__item-date">25.05.2023</div>
                   </div>
-                  <div class="item-text">
-                    <div class="item-text__title">
+                  <div class="news-slider__item-text">
+                    <div class="news-slider__item-title">
                       Cертифицированный цикл по нейромоду Cертифицированный</div>
-                    <div class="item-text__descr">
+                    <div class="news-slider__item-descr">
                       Прошел 10 - 12 мая на базе отделения нейрохирургии<br>Университетской клиники
                     </div>
                   </div>
-                  <div class="item-controls">
-                    <a class="item__link" href="#">
+                  <div class="news-slider__item-controls">
+                    <a class="news-slider__item-link" href="#">
                       <img src="./img/main/news/human.svg" alt="">
                       <img src="./img/main/news/human-hover.svg" alt="">
-                      <div class="link-text">Институт педиатрии</div>
+                      <div class="news-slider__item-institute">Институт педиатрии</div>
                     </a>
-                    <a class="item-paper" href="#">Статья</a>
+                    <a class="news-slider__item-paper" href="#">Статья</a>
                   </div>
                 </div>
               </div>
-              <div class="news-content__item">
-                <div class="item__img">
+              <div class="news-slider__item">
+                <div class="news-slider__item-img">
                   <img data-lazy="./img/main/news/slide2.jpg" alt="" />
                 </div>
-                <div class="item__content">
-                  <div class="item__time">
+                <div class="news-slider__item-content">
+                  <div class="news-slider__item-time">
                     <img src="./img/main/news/clock.svg" alt="">
-                    <div class="date">25.05.2023</div>
+                    <div class="news-slider__item-date">25.05.2023</div>
                   </div>
-                  <div class="item-text">
-                    <div class="item-text__title">
+                  <div class="news-slider__item-text">
+                    <div class="news-slider__item-title">
                       Cертифицированный цикл по нейромоду Cертифицированный
                     </div>
-                    <div class="item-text__descr">
+                    <div class="news-slider__item-descr">
                       Прошел 10 - 12 мая на базе отделения нейрохирургии<br>Университетской клиники
                     </div>
                   </div>
-                  <div class="item-controls">
-                    <a class="item__link" href="#">
+                  <div class="news-slider__item-controls">
+                    <a class="news-slider__item-link" href="#">
                       <img src="./img/main/news/human.svg" alt="">
                       <img src="./img/main/news/human-hover.svg" alt="">
-                      <div class="link-text">Институт педиатрии</div>
+                      <div class="news-slider__item-institute">Институт педиатрии</div>
                     </a>
-                    <a class="item-paper" href="#">Статья</a>
+                    <a class="news-slider__item-paper" href="#">Статья</a>
                   </div>
                 </div>
               </div>
-              <div class="news-content__item">
-                <div class="item__img">
+              <div class="news-slider__item">
+                <div class="news-slider__item-img">
                   <img data-lazy="./img/main/news/slide3.jpg" alt="" />
                 </div>
-                <div class="item__content">
-                  <div class="item__time">
+                <div class="news-slider__item-content">
+                  <div class="news-slider__item-time">
                     <img src="./img/main/news/clock.svg" alt="">
-                    <div class="date">25.05.2023</div>
+                    <div class="news-slider__item-date">25.05.2023</div>
                   </div>
-                  <div class="item-text">
-                    <div class="item-text__title">
+                  <div class="news-slider__item-text">
+                    <div class="news-slider__item-title">
                       Cертифицированный цикл по нейромоду Cертифицированный
                     </div>
-                    <div class="item-text__descr">
+                    <div class="news-slider__item-descr">
                       Прошел 10 - 12 мая на базе отделения нейрохирургии<br>Университетской клиники
                     </div>
                   </div>
-                  <div class="item-controls">
-                    <a class="item__link" href="#">
+                  <div class="news-slider__item-controls">
+                    <a class="news-slider__item-link" href="#">
                       <img src="./img/main/news/human.svg" alt="">
                       <img src="./img/main/news/human-hover.svg" alt="">
-                      <div class="link-text">Институт педиатрии</div>
+                      <div class="news-slider__item-institute">Институт педиатрии</div>
                     </a>
-                    <a class="item-paper" href="#">Статья</a>
+                    <a class="news-slider__item-paper" href="#">Статья</a>
                   </div>
                 </div>
               </div>
-              <div class="news-content__item">
-                <div class="item__img">
+              <div class="news-slider__item">
+                <div class="news-slider__item-img">
                   <img data-lazy="./img/main/news/slide1.jpg" alt="" />
                 </div>
-                <div class="item__content">
-                  <div class="item__time">
+                <div class="news-slider__item-content">
+                  <div class="news-slider__item-time">
                     <img src="./img/main/news/clock.svg" alt="">
-                    <div class="date">25.05.2023</div>
+                    <div class="news-slider__item-date">25.05.2023</div>
                   </div>
-                  <div class="item-text">
-                    <div class="item-text__title">
+                  <div class="news-slider__item-text">
+                    <div class="news-slider__item-title">
                       Cертифицированный цикл по нейромоду Cертифицированный
                     </div>
-                    <div class="item-text__descr">
+                    <div class="news-slider__item-descr">
                       Прошел 10 - 12 мая на базе отделения нейрохирургии<br>Университетской клиники
                     </div>
                   </div>
-                  <div class="item-controls">
-                    <a class="item__link" href="#">
+                  <div class="news-slider__item-controls">
+                    <a class="news-slider__item-link" href="#">
                       <img src="./img/main/news/human.svg" alt="">
                       <img src="./img/main/news/human-hover.svg" alt="">
-                      <div class="link-text">Институт педиатрии</div>
+                      <div class="news-slider__item-institute">Институт педиатрии</div>
                     </a>
-                    <a class="item-paper" href="#">Статья</a>
+                    <a class="news-slider__item-paper" href="#">Статья</a>
                   </div>
                 </div>
               </div>
-              <div class="news-content__item">
-                <div class="item__img">
+              <div class="news-slider__item">
+                <div class="news-slider__item-img">
                   <img data-lazy="./img/main/news/slide1.jpg" alt="" />
                 </div>
-                <div class="item__content">
-                  <div class="item__time">
+                <div class="news-slider__item-content">
+                  <div class="news-slider__item-time">
                     <img src="./img/main/news/clock.svg" alt="">
-                    <div class="date">25.05.2023</div>
+                    <div class="news-slider__item-date">25.05.2023</div>
                   </div>
-                  <div class="item-text">
-                    <div class="item-text__title">
+                  <div class="news-slider__item-text">
+                    <div class="news-slider__item-title">
                       Cертифицированный цикл по нейромоду Cертифицированный
                     </div>
-                    <div class="item-text__descr">
+                    <div class="news-slider__item-descr">
                       Прошел 10 - 12 мая на базе отделения нейрохирургии<br>Университетской клиники
                     </div>
                   </div>
-                  <div class="item-controls">
-                    <a class="item__link" href="#">
+                  <div class="news-slider__item-controls">
+                    <a class="news-slider__item-link" href="#">
                       <img src="./img/main/news/human.svg" alt="">
                       <img src="./img/main/news/human-hover.svg" alt="">
-                      <div class="link-text">Институт педиатрии</div>
+                      <div class="news-slider__item-institute">Институт педиатрии</div>
                     </a>
-                    <a class="item-paper" href="#">Статья</a>
+                    <a class="news-slider__item-paper" href="#">Статья</a>
                   </div>
                 </div>
               </div>
@@ -445,43 +441,43 @@
           </section>
           <section class="feedback">
             <div class="feedback__head">
-              <h1 class="feedback__title">Отзывы</h1>
-              <a href="#" class="feedback__button">Смотреть все</a>
+              <h1 class="feedback__title title">Отзывы</h1>
+              <a class="feedback__button btn-all" href="#">Смотреть все</a>
             </div>
             <div class="feedback__content">
-              <div class="feedback__category">
-                <div class="feedback-item active">
-                  <img class="feedback-item__img" src="./img/main/feedback/feedback.svg" alt="">
-                  <img class="feedback-item__img" src="./img/main/feedback/feedback-hover.svg" alt="">
+              <div class="feedback__categorys">
+                <div class="feedback__category active">
+                  <img src="./img/main/feedback/feedback.svg" alt="">
+                  <img src="./img/main/feedback/feedback-hover.svg" alt="">
                   Все отзывы
                 </div>
-                <div class="feedback-item">
-                  <img class="feedback-item__img" src="./img/main/feedback/doctor.svg" alt="">
-                  <img class="feedback-item__img" src="./img/main/feedback/doctor-hover.svg" alt="">
+                <div class="feedback__category">
+                  <img src="./img/main/feedback/doctor.svg" alt="">
+                  <img src="./img/main/feedback/doctor-hover.svg" alt="">
                   Отзывы о врачах
                 </div>
-                <div class="feedback-item">
-                  <img class="feedback-item__img" src="./img/main/feedback/clinic.svg" alt="">
-                  <img class="feedback-item__img" src="./img/main/feedback/clinic-hover.svg" alt="">
+                <div class="feedback__category">
+                  <img src="./img/main/feedback/clinic.svg" alt="">
+                  <img src="./img/main/feedback/clinic-hover.svg" alt="">
                   Отзывы о клинике
                 </div>
               </div>
-              <div class="feedback__slider">
+              <div class="feedback-slider">
                 <div class="feedback__card">
-                  <div class="card__head">
-                    <img class="card__photo" src="./img/main/feedback/user-photo.svg" alt="">
-                    <div class="card__descr">
-                      <div class="card__user">Савинова Мария</div>
-                      <div class="card__info">
-                        <img class="card__rate" src="./img/main/feedback/stars.svg" alt="">
-                        <div class="card__date">
-                          <img class="date__img" src="./img/main/feedback/clock.svg" alt="">
-                          <div class="date__text">15 мая, 2023</div>
+                  <div class="feedback__card-head">
+                    <img class="feedback__card-photo" src="./img/main/feedback/user-photo.svg" alt="">
+                    <div class="feedback__card-info">
+                      <div class="feedback__card-user">Савинова Мария</div>
+                      <div class="feedback__card-statistic">
+                        <img class="feedback__card-rate" src="./img/main/feedback/stars.svg" alt="">
+                        <div class="feedback__card-time">
+                          <img src="./img/main/feedback/clock.svg" alt="">
+                          <div class="feedback__card-date">15 мая, 2023</div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card__text">Текст 1 в несколько строк текст в несколько строк текст в несколько строк
+                  <div class="feedback__card-text">Текст 1 в несколько строк текст в несколько строк текст в несколько строк
                     текст в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк
                     текст в несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст
                     в несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
@@ -498,20 +494,20 @@
                   </div>
                 </div>
                 <div class="feedback__card">
-                  <div class="card__head">
-                    <img class="card__photo" src="./img/main/feedback/user-photo.svg" alt="">
-                    <div class="card__descr">
-                      <div class="card__user">Савинова Мария</div>
-                      <div class="card__info">
-                        <img class="card__rate" src="./img/main/feedback/stars.svg" alt="">
-                        <div class="card__date">
+                  <div class="feedback__card-head">
+                    <img class="feedback__card-photo" src="./img/main/feedback/user-photo.svg" alt="">
+                    <div class="feedback__card-info">
+                      <div class="feedback__card-user">Савинова Мария</div>
+                      <div class="feedback__card-statistic">
+                        <img class="feedback__card-rate" src="./img/main/feedback/stars.svg" alt="">
+                        <div class="feedback__card-time">
                           <img class="date__img" src="./img/main/feedback/clock.svg" alt="">
-                          <div class="date__text">15 мая, 2023</div>
+                          <div class="feedback__card-date">15 мая, 2023</div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card__text">Текст 2 в несколько строк текст в несколько строк текст в несколько строк
+                  <div class="feedback__card-text">Текст 2 в несколько строк текст в несколько строк текст в несколько строк
                     текст
                     в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк текст в
                     несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
@@ -524,20 +520,20 @@
                   </div>
                 </div>
                 <div class="feedback__card">
-                  <div class="card__head">
-                    <img class="card__photo" src="./img/main/feedback/user-photo.svg" alt="">
-                    <div class="card__descr">
-                      <div class="card__user">Савинова Мария</div>
-                      <div class="card__info">
-                        <img class="card__rate" src="./img/main/feedback/stars.svg" alt="">
-                        <div class="card__date">
+                  <div class="feedback__card-head">
+                    <img class="feedback__card-photo" src="./img/main/feedback/user-photo.svg" alt="">
+                    <div class="feedback__card-info">
+                      <div class="feedback__card-user">Савинова Мария</div>
+                      <div class="feedback__card-statistic">
+                        <img class="feedback__card-rate" src="./img/main/feedback/stars.svg" alt="">
+                        <div class="feedback__card-time">
                           <img class="date__img" src="./img/main/feedback/clock.svg" alt="">
-                          <div class="date__text">15 мая, 2023</div>
+                          <div class="feedback__card-date">15 мая, 2023</div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card__text">Текст 3 в несколько строк текст в несколько строк текст в несколько строк
+                  <div class="feedback__card-text">Текст 3 в несколько строк текст в несколько строк текст в несколько строк
                     текст
                     в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк текст в
                     несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
@@ -550,20 +546,20 @@
                   </div>
                 </div>
                 <div class="feedback__card">
-                  <div class="card__head">
-                    <img class="card__photo" src="./img/main/feedback/user-photo.svg" alt="">
-                    <div class="card__descr">
-                      <div class="card__user">Савинова Мария</div>
-                      <div class="card__info">
-                        <img class="card__rate" src="./img/main/feedback/stars.svg" alt="">
-                        <div class="card__date">
+                  <div class="feedback__card-head">
+                    <img class="feedback__card-photo" src="./img/main/feedback/user-photo.svg" alt="">
+                    <div class="feedback__card-info">
+                      <div class="feedback__card-user">Савинова Мария</div>
+                      <div class="feedback__card-statistic">
+                        <img class="feedback__card-rate" src="./img/main/feedback/stars.svg" alt="">
+                        <div class="feedback__card-time">
                           <img class="date__img" src="./img/main/feedback/clock.svg" alt="">
-                          <div class="date__text">15 мая, 2023</div>
+                          <div class="feedback__card-date">15 мая, 2023</div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card__text">Текст 4 в несколько строк текст в несколько строк текст в несколько строк
+                  <div class="feedback__card-text">Текст 4 в несколько строк текст в несколько строк текст в несколько строк
                     текст
                     в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк текст в
                     несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
@@ -576,20 +572,20 @@
                   </div>
                 </div>
                 <div class="feedback__card">
-                  <div class="card__head">
-                    <img class="card__photo" src="./img/main/feedback/user-photo.svg" alt="">
-                    <div class="card__descr">
-                      <div class="card__user">Савинова Мария</div>
-                      <div class="card__info">
-                        <img class="card__rate" src="./img/main/feedback/stars.svg" alt="">
-                        <div class="card__date">
+                  <div class="feedback__card-head">
+                    <img class="feedback__card-photo" src="./img/main/feedback/user-photo.svg" alt="">
+                    <div class="feedback__card-info">
+                      <div class="feedback__card-user">Савинова Мария</div>
+                      <div class="feedback__card-statistic">
+                        <img class="feedback__card-rate" src="./img/main/feedback/stars.svg" alt="">
+                        <div class="feedback__card-time">
                           <img class="date__img" src="./img/main/feedback/clock.svg" alt="">
-                          <div class="date__text">15 мая, 2023</div>
+                          <div class="feedback__card-date">15 мая, 2023</div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card__text">Текст 5 в несколько строк текст в несколько строк текст в несколько строк
+                  <div class="feedback__card-text">Текст 5 в несколько строк текст в несколько строк текст в несколько строк
                     текст
                     в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк текст в
                     несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
@@ -602,20 +598,20 @@
                   </div>
                 </div>
                 <div class="feedback__card">
-                  <div class="card__head">
-                    <img class="card__photo" src="./img/main/feedback/user-photo.svg" alt="">
-                    <div class="card__descr">
-                      <div class="card__user">Савинова Мария</div>
-                      <div class="card__info">
-                        <img class="card__rate" src="./img/main/feedback/stars.svg" alt="">
-                        <div class="card__date">
+                  <div class="feedback__card-head">
+                    <img class="feedback__card-photo" src="./img/main/feedback/user-photo.svg" alt="">
+                    <div class="feedback__card-info">
+                      <div class="feedback__card-user">Савинова Мария</div>
+                      <div class="feedback__card-statistic">
+                        <img class="feedback__card-rate" src="./img/main/feedback/stars.svg" alt="">
+                        <div class="feedback__card-time">
                           <img class="date__img" src="./img/main/feedback/clock.svg" alt="">
-                          <div class="date__text">15 мая, 2023</div>
+                          <div class="feedback__card-date">15 мая, 2023</div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card__text">Текст 6 в несколько строк текст в несколько строк текст в несколько строк
+                  <div class="feedback__card-text">Текст 6 в несколько строк текст в несколько строк текст в несколько строк
                     текст
                     в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк текст в
                     несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
@@ -633,13 +629,13 @@
           </section>
           <section class="questions">
             <div class="questions__head">
-              <h1 class="questions__title">Вопросы и ответы</h1>
-              <a href="#" class="questions__button">Смотреть все</a>
+              <h1 class="questions__title title">Вопросы и ответы</h1>
+              <a href="#" class="questions__button btn-all">Смотреть все</a>
             </div>
             <div class="questions__content">
               <div class="question">
                 <button class="question__head active">Вопрос 1</button>
-                <div class="descr">
+                <div class="question__text">
                   <hr>
                   <p>Текст 1 в несколько строк текст в несколько строк текст в несколько строк
                     текст в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк
@@ -656,7 +652,7 @@
               </div>
               <div class="question">
                 <button class="question__head">Вопрос 2</button>
-                <div class="descr">
+                <div class="question__text">
                   <hr>
                   <p>Текст 2 в несколько строк текст в несколько строк текст в несколько строк
                     текст в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк
@@ -667,7 +663,7 @@
               </div>
               <div class="question">
                 <button class="question__head">Вопрос 3</button>
-                <div class="descr">
+                <div class="question__text">
                   <hr>
                   <p>Текст 3 в несколько строк текст в несколько строк текст в несколько строк
                     текст в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк
@@ -678,7 +674,7 @@
               </div>
               <div class="question">
                 <button class="question__head">Вопрос 4</button>
-                <div class="descr">
+                <div class="question__text">
                   <hr>
                   <p>Текст 4 в несколько строк текст в несколько строк текст в несколько строк
                     текст в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк
@@ -689,7 +685,7 @@
               </div>
               <div class="question">
                 <button class="question__head">Вопрос 5</button>
-                <div class="descr">
+                <div class="question__text">
                   <hr>
                   <p>Текст 5 в несколько строк текст в несколько строк текст в несколько строк
                     текст в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк
@@ -700,7 +696,7 @@
               </div>
               <div class="question">
                 <button class="question__head">Вопрос 6</button>
-                <div class="descr">
+                <div class="question__text">
                   <hr>
                   <p>Текст 6 в несколько строк текст в несколько строк текст в несколько строк
                     текст в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк
@@ -711,7 +707,7 @@
               </div>
               <div class="question">
                 <button class="question__head">Вопрос 7</button>
-                <div class="descr">
+                <div class="question__text">
                   <hr>
                   <p>Текст 7 в несколько строк текст в несколько строк текст в несколько строк
                     текст в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк
@@ -724,27 +720,27 @@
           </section>
           <section class="support">
             <div class="support__content">
-              <h2 class="support__title">Остались вопросы?</h2>
+              <h2 class="support__title title">Остались вопросы?</h2>
               <div class="support__descr">Обратитесь в поддержку,<br>мы поможем сориентироваться<br>и ответим на все
                 вопросы
               </div>
               <div class="support__info">
-                <div class="info__text">Колл-центр</div>
-                <div class="info__phone">
+                <div class="support__info-text">Колл-центр</div>
+                <div class="support__info-phone phone">
                   <img src="./img/main/support/phone.svg" alt="" />
-                  <a class="tel" href="tel:+73910000000">+7 (391) 000-00-00</a>
+                  <a href="tel:+73910000000">+7 (391) 000-00-00</a>
                 </div>
               </div>
             </div>
-            <div class="support__form" action="">
-              <div class="personal">
-                <input class="text" type="text" name="name" placeholder="Ваше имя">
-                <input class="email" type="email" name="first_name" placeholder="Ваша почта">
+            <div class="support-form" action="">
+              <div class="support-form__user">
+                <input class="support-form__user-name" type="text" name="name" placeholder="Ваше имя">
+                <input class="support-form__user-email" type="email" name="first_name" placeholder="Ваша почта">
               </div>
-              <textarea class="textarea" name="textarea" placeholder="Текстовое сообщение"></textarea>
-              <div class="submit">
-                <input class="submit__button" type="submit" value="Отправить вопрос" />
-                <div class="submit__policy">Нажимая на кнопку, вы даете согласие<br>на обработку персональных
+              <textarea class="support-form__textarea" name="textarea" placeholder="Текстовое сообщение"></textarea>
+              <div class="support-form__submit">
+                <input class="support-form__submit-button" type="submit" value="Отправить вопрос" />
+                <div class="support-form__submit-policy">Нажимая на кнопку, вы даете согласие<br>на обработку персональных
                   данных<br>в соответствии с
                   <a href="">политикой конфиденциальности</a>
                 </div>
@@ -756,46 +752,46 @@
           </article>
         </div>
       </main>
-
       <footer class="footer">
         <div class="footer__main">
           <div class="footer__content">
             <div class="footer__logos">
-              <div class="logo-clinic">
-                <img src="./img/footer/clinic.svg" alt="">
-                <div class="logo-clinic__text">УНИВЕСИТЕТСКАЯ<br>КЛИНИКА<br>ПИМУ</div>
-              </div>
-              <a class="logo-rate" href="#"><img src="./img/footer/rate.jpg" alt=""></img></a>
+              <a class="footer__logo logo" href="">
+                <img src="./img/aside/logo.png" alt="" />
+              </a>
+              <a class="footer__logo-rate" href="#">
+                <img src="./img/footer/rate.jpg" alt=""></img>
+              </a>
             </div>
-            <div class="footer__controls">
-              <a href="#" class="controls__link">Услуги и цены</a>
-              <a href="#" class="controls__link">Врачи</a>
-              <a href="#" class="controls__link">Пациентам</a>
-              <a href="#" class="controls__link">Расписание</a>
-              <a href="#" class="controls__link">О клинике</a>
-              <a href="#" class="controls__link">Работа в клинике</a>
-              <a href="#" class="controls__link">Контакты</a>
-              <a href="#" class="controls__link">Новости</a>
-              <a href="#" class="controls__link">Вопросы и ответы</a>
-              <a href="#" class="controls__link">Отзывы</a>
-              <a href="#" class="controls__link">Личный кабинет</a>
-              <a href="#" class="controls__link">Документы</a>
-              <a href="#" class="controls__link">Сведения о медицинских работниках</a>
-              <a href="#" class="controls__link">Контакты контролирующих организаций</a>
+            <div class="footer__menu">
+              <a href="#" class="footer__menu-link">Услуги и цены</a>
+              <a href="#" class="footer__menu-link">Врачи</a>
+              <a href="#" class="footer__menu-link">Пациентам</a>
+              <a href="#" class="footer__menu-link">Расписание</a>
+              <a href="#" class="footer__menu-link">О клинике</a>
+              <a href="#" class="footer__menu-link">Работа в клинике</a>
+              <a href="#" class="footer__menu-link">Контакты</a>
+              <a href="#" class="footer__menu-link">Новости</a>
+              <a href="#" class="footer__menu-link">Вопросы и ответы</a>
+              <a href="#" class="footer__menu-link">Отзывы</a>
+              <a href="#" class="footer__menu-link">Личный кабинет</a>
+              <a href="#" class="footer__menu-link">Документы</a>
+              <a href="#" class="footer__menu-link">Сведения о медицинских работниках</a>
+              <a href="#" class="footer__menu-link">Контакты контролирующих организаций</a>
             </div>
             <div class="footer__info">
-              <a class="sign" href="#">
+              <a class="footer__sign button-sign" href="#">
                 <img src="./img/aside/sign.svg" alt="" />
                 Записаться на прием
               </a>
-              <div class="info__contacts">
-                <div class="feedback-call">
-                  <div class="info__phone">
+              <div class="footer__controls">
+                <div class="footer-feedback">
+                  <div class="footer-feedback__phone phone">
                     <img src="./img/main/support/phone.svg" alt="" />
-                    <a class="tel" href="tel:+73910000000">+7 (391) 000-00-00</a>
+                    <a href="tel:+73910000000">+7 (391) 000-00-00</a>
                   </div>
-                  <div class="feedback-call__text">
-                    <div class="feedback-call__descr">Обратный звонок</div>
+                  <div class="footer-feedback__call">
+                    <div class="footer-feedback__call-text">Обратный звонок</div>
                     <img src="./img/footer/dash-orig.svg" alt="">
                   </div>
                 </div>
@@ -819,33 +815,30 @@
               </div>
             </div>
           </div>
-
           <div class="footer__policy">
-            <div class="policy__links">
+            <div class="footer__policy-menu">
               <a class="gaze" href="#">
                 <img src="./img/header/gaze.svg" alt="" />
                 <img src="./img/header/gaze-click.svg" alt="" />
                 Для слабовидящих
               </a>
-              <div class="links">
-                <a href="#" class="link">Лицензии</a>
-                <a href="#" class="link">Противодействие коррупции</a>
-                <a href="#" class="link">Политика конфиденциальности</a>
-                <a href="#" class="link">Карта сайта</a>
+              <div class="footer__policy-links">
+                <a href="#" class="footer__policy-link">Лицензии</a>
+                <a href="#" class="footer__policy-link">Противодействие коррупции</a>
+                <a href="#" class="footer__policy-link">Политика конфиденциальности</a>
+                <a href="#" class="footer__policy-link">Карта сайта</a>
               </div>
             </div>
             <div class="footer__license">
-              <div class="license__text">© 2023 ООО ПИМУ</div>
-              <img class="license-img" src="./img/footer/bit-performance.svg" alt="">
+              <div class="footer__license-text">© 2023 ООО ПИМУ</div>
+              <img src="./img/footer/bit-performance.svg" alt="">
             </div>
           </div>
         </div>
-
-        <div class="footer__bottom">
+        <div class="footer__bottom-text">
           Имеются Противопоказания Необходима консультация специалиста
         </div>
       </footer>
-
     </div>
   </div>
 

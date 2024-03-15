@@ -1,6 +1,6 @@
 // sliders
 $(document).ready(function () {
-  const slickSlider = $(".slick-slider").slick({
+  const slickSlider = $(".main-slider").slick({
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnFocus: false,
@@ -12,9 +12,9 @@ $(document).ready(function () {
     centerMode: false,
     variableWidth: false,
     fade: true,
-    appendDots: $(".slider__dots"),
+    appendDots: $(".slider-top__dots"),
   });
-  $(".news-content").slick({
+  $(".news-slider").slick({
     slidesToShow: 4,
     autoplay: false,
     draggable: false,
@@ -23,7 +23,7 @@ $(document).ready(function () {
     variableWidth: false,
     fade: false,
   });
-  $(".feedback__slider").slick({
+  $(".feedback-slider").slick({
     slidesToShow: 1,
     autoplay: false,
     dots: true,
@@ -35,9 +35,9 @@ $(document).ready(function () {
     appendDots: $(".feedback__dots"),
   });
 
-  const progressBar = document.querySelector(".progress-circle");
-  const textCurrent = document.querySelector(".text__current");
-  const textTotal = document.querySelector(".text__total");
+  const progressBar = document.querySelector(".progress-bar__inner-circle");
+  const textCurrent = document.querySelector(".progress-bar__text-current");
+  const textTotal = document.querySelector(".progress-bar__text-total");
   const duration = slickSlider.slick("slickGetOption", "autoplaySpeed"); // Длительность автопрокрутки в миллисекундах
   const circumference = 2 * Math.PI * 20; // Длина окружности круга
 
@@ -85,7 +85,7 @@ const setActiveTab = (tabs) => {
 
 
 // tabs age
-const age = document.querySelectorAll(".age__item");
+const age = document.querySelectorAll(".age__btn");
 setActiveTab(age)
 
 
@@ -99,7 +99,7 @@ const phone = document.querySelector(".phone")
 const gaze = document.querySelector(".gaze")
 const search = document.querySelector(".search")
 const searchBlock = document.querySelector(".search-block")
-const searchBtn = document.querySelector(".search-button")
+const searchBtn = document.querySelector(".search-block__button")
 
 search.addEventListener('click', ()=> {
   searchBlock.style.display = 'flex'
@@ -113,13 +113,13 @@ searchBtn.addEventListener('click', ()=> {
 
 
 // tabs feedback
-const feedback = document.querySelectorAll(".feedback-item");
+const feedback = document.querySelectorAll(".feedback__category");
 setActiveTab(feedback)
 
 
 // accordion questions
 const acc = document.querySelectorAll(".question__head")
-const allDescr = document.querySelectorAll(".descr")
+const allDescr = document.querySelectorAll(".question__text")
 acc[0].nextElementSibling.style.maxHeight = "124px"
 
 acc.forEach((item) => {
