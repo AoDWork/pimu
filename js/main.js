@@ -119,14 +119,18 @@ setActiveTab(feedback)
 
 // accordion questions
 const acc = document.querySelectorAll(".question__head")
+const topBorder = document.querySelectorAll(".question__top-border")
 const allDescr = document.querySelectorAll(".question__text")
+topBorder[0].style.display = 'block'
 acc[0].nextElementSibling.style.maxHeight = "124px"
 
 acc.forEach((item) => {
   item.addEventListener("click", (e) => {
     allDescr.forEach((item) => item.style.maxHeight = null )
+    topBorder.forEach((item) => item.style.display = null )
     acc.forEach((item) => item.classList.remove("active"))
     
+    e.target.previousElementSibling.style.display = 'block'
     e.target.classList.add("active")
     e.target.nextElementSibling.style.maxHeight = "124px"
   })
