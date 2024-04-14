@@ -8,6 +8,8 @@
   <title>PIMU</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
   <link rel="stylesheet" type="text/css" href="./libs/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -15,7 +17,7 @@
   <div class="page-wrapper">
     <aside class="aside">
       <a class="aside__logo logo" href="">
-        <img src="./img/aside/logo.png" alt="" />
+        <img src="./img/aside/logo.svg" alt="" />
       </a>
       <div class="aside__age age">
         <button class="age__btn active">Взрослым</button>
@@ -71,9 +73,12 @@
       <header class="header">
         <div class="header__categories">
           <a class="header__categories-item" href="#"><img src="./img/header/pediatrics.svg" alt="" />Педиатрия</a>
-          <a class="header__categories-item" href="#"><img src="./img/main/institutes/orthopedics.svg" alt="" />Стоматология</a>
-          <a class="header__categories-item" href="#"><img src="./img/header/rehabilitation.svg" alt="" />Реабилитация</a>
-          <a class="header__categories-item--long" href="#"><img src="./img/header/orthopedics-hover.svg" alt="" />Институт
+          <a class="header__categories-item" href="#"><img src="./img/main/institutes/orthopedics.svg"
+              alt="" />Стоматология</a>
+          <a class="header__categories-item" href="#"><img src="./img/header/rehabilitation.svg"
+              alt="" />Реабилитация</a>
+          <a class="header__categories-item--long" href="#"><img src="./img/header/orthopedics-hover.svg"
+              alt="" />Институт
             травматологии и ортопедии
           </a>
           <a class="header__categories-item" href="#"><img src="./img/header/mental.svg" alt="" />Ментальное
@@ -108,16 +113,48 @@
             <form class="search-block" action="#">
               <input class="search-block__input" type="text" name="search" placeholder="Поиск по сайту">
               <button class="search-block__button">
-                <img  src="./img/header/search-input-inactive.svg" alt="" />
-                <img  src="./img/header/search-input-hover.svg" alt="" />
-                <img  src="./img/header/search-input-click.svg" alt="" />
+                <img src="./img/header/search-input-inactive.svg" alt="" />
+                <img src="./img/header/search-input-hover.svg" alt="" />
+                <img src="./img/header/search-input-click.svg" alt="" />
               </button>
             </form>
           </div>
         </nav>
       </header>
+      <header class="header-mobile">
+        <div class="burger-menu">
+          <img src="./img/burger-img.svg" alt="">
+        </div>
+        <a class="header-mobile__logo" href="">
+          <img src="./img/aside/logo.svg" alt="" />
+        </a>
+        <div class="header-mobile__controls">
+          <a class="gaze" href="#">
+            <img src="./img/header/gaze.svg" alt="" />
+            <img src="./img/header/gaze-click.svg" alt="" />
+          </a>
+          <div class="header-mobile__phone">
+            <img src="./img/main/support/phone.svg" alt="" />
+          </div>
+        </div>
+      </header>
+
       <main class="main">
         <div class="container__main">
+
+          <div class="select-container">
+            <select class="select-box" name="select" id="">
+              <option value="placeholder" selected disabled>Выберите направление</option>
+              <option value="pediatrics">Педиатрия</option>
+              <option value="stomatology">Стоматология</option>
+              <option value="rehabilitation">Реабилитация</option>
+              <option value="orthopedics">Институт
+                травматологии и ортопедии</option>
+              <option value="mental">Ментальное
+                здоровье</option>
+            </select>
+          </div>
+
           <article class="slider-top">
             <div class="main-slider">
               <div class="main-slider__item">
@@ -275,7 +312,8 @@
                   <img src="./img/main/advantages/doctors.svg" alt="" class="advantages-item__img">
                   <div class="advantages__content-title">Врачи</div>
                 </div>
-                <div class="advantages__content-text">142 врача клинических отделений, из них 9 докторов медицинских наук,
+                <div class="advantages__content-text">142 врача клинических отделений, из них 9 докторов медицинских
+                  наук,
                   71 кандидат медицинских наук,<br>12 кандидатов биологических наук, 39 врачей с высшей категорией</div>
                 <a href="#" class="advantages__content-link">Узнать подробнее <img
                     src="./img/main/advantages/arrow-right.svg" alt="" /></a>
@@ -285,7 +323,8 @@
                   <img src="./img/main/advantages/equipment.svg" alt="" class="advantages-item__img">
                   <div class="advantages__content-title">Оборудование</div>
                 </div>
-                <div class="advantages__content-text">Новейшее клиническое, диагностическое<br>и лабораторное оборудование
+                <div class="advantages__content-text">Новейшее клиническое, диагностическое<br>и лабораторное
+                  оборудование
                 </div>
                 <a href="#" class="advantages__content-link">Узнать подробнее <img
                     src="./img/main/advantages/arrow-right.svg" alt="" /></a>
@@ -478,7 +517,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="feedback__card-text">Текст 1 в несколько строк текст в несколько строк текст в несколько строк
+                  <div class="feedback__card-text">Текст 1 в несколько строк текст в несколько строк текст в несколько
+                    строк
                     текст в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк
                     текст в несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст
                     в несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
@@ -508,7 +548,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="feedback__card-text">Текст 2 в несколько строк текст в несколько строк текст в несколько строк
+                  <div class="feedback__card-text">Текст 2 в несколько строк текст в несколько строк текст в несколько
+                    строк
                     текст
                     в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк текст в
                     несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
@@ -534,7 +575,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="feedback__card-text">Текст 3 в несколько строк текст в несколько строк текст в несколько строк
+                  <div class="feedback__card-text">Текст 3 в несколько строк текст в несколько строк текст в несколько
+                    строк
                     текст
                     в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк текст в
                     несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
@@ -560,7 +602,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="feedback__card-text">Текст 4 в несколько строк текст в несколько строк текст в несколько строк
+                  <div class="feedback__card-text">Текст 4 в несколько строк текст в несколько строк текст в несколько
+                    строк
                     текст
                     в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк текст в
                     несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
@@ -586,7 +629,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="feedback__card-text">Текст 5 в несколько строк текст в несколько строк текст в несколько строк
+                  <div class="feedback__card-text">Текст 5 в несколько строк текст в несколько строк текст в несколько
+                    строк
                     текст
                     в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк текст в
                     несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
@@ -612,7 +656,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="feedback__card-text">Текст 6 в несколько строк текст в несколько строк текст в несколько строк
+                  <div class="feedback__card-text">Текст 6 в несколько строк текст в несколько строк текст в несколько
+                    строк
                     текст
                     в несколько строк Текст в несколько строк текст в несколько строк текст в несколько строк текст в
                     несколько строкТекст в несколько строк текст в несколько строк текст в несколько строк текст в
@@ -748,7 +793,8 @@
               <textarea class="support-form__textarea" name="textarea" placeholder="Текстовое сообщение"></textarea>
               <div class="support-form__submit">
                 <input class="support-form__submit-button" type="submit" value="Отправить вопрос" />
-                <div class="support-form__submit-policy">Нажимая на кнопку, вы даете согласие<br>на обработку персональных
+                <div class="support-form__submit-policy">Нажимая на кнопку, вы даете согласие<br>на обработку
+                  персональных
                   данных<br>в соответствии с
                   <a href="">политикой конфиденциальности</a>
                 </div>
@@ -765,7 +811,7 @@
           <div class="footer__content">
             <div class="footer__logos">
               <a class="footer__logo logo" href="">
-                <img src="./img/aside/logo.png" alt="" />
+                <img src="./img/aside/logo.svg" alt="" />
               </a>
               <a class="footer__logo-rate" href="#">
                 <img src="./img/footer/rate.jpg" alt=""></img>
@@ -853,6 +899,7 @@
   <!-- libraries and plugins -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <!-- Self scripsts and libraries -->
   <script src="./js/main.js"></script>
 </body>

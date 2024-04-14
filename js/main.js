@@ -72,6 +72,12 @@ $(document).ready(function () {
   updateProgress();
 })
 
+// select
+const element = document.querySelector('.select-box');
+const choices = new Choices(element, {
+  searchEnabled: false,
+});
+
 
 // function set active to tab, onclick listener, remove active from other tabs
 const setActiveTab = (tabs) => {
