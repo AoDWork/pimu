@@ -8,7 +8,6 @@
   <title>PIMU</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
   <link rel="stylesheet" type="text/css" href="./libs/slick/slick.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="./css/main.css" />
 </head>
@@ -141,10 +140,9 @@
 
       <main class="main">
         <div class="container__main">
-
           <div class="select-container">
             <select class="select-box" name="select" id="">
-              <option value="placeholder" selected disabled>Выберите направление</option>
+              <option value="" selected disabled>Выберите направление</option>
               <option value="pediatrics">Педиатрия</option>
               <option value="stomatology">Стоматология</option>
               <option value="rehabilitation">Реабилитация</option>
@@ -154,11 +152,22 @@
                 здоровье</option>
             </select>
           </div>
+          <div class="mobile-cotrols">
+            <div class="mobile__age age">
+              <button class="age__btn active">Взрослым</button>
+              <button class="age__btn">Детям</button>
+            </div>
+            <div class="mobile__search search">
+              <img src="./img/header/search.svg" alt="" />
+              <img src="./img/header/search-hov.svg" alt="" />
+            </div>
+          </div>
 
           <article class="slider-top">
             <div class="main-slider">
               <div class="main-slider__item">
-                <img data-lazy="./img/main/top-slider/slide1.jpg" alt="" />
+                <img class="main-slider__img" data-lazy="./img/main/top-slider/slide1.jpg" alt="" />
+                <img data-lazy="./img/main/top-slider/mobile-slide1-pos.jpg" alt="" />
                 <div class="main-slider__controls">
                   <div class="main-slider__title">
                     Какая-либо услуга в две строки
@@ -173,7 +182,8 @@
                 </div>
               </div>
               <div class="main-slider__item">
-                <img data-lazy="./img/main/top-slider/slide2.jpg" alt="" />
+                <img class="main-slider__img" data-lazy="./img/main/top-slider/slide2.jpg" alt="" />
+                <img data-lazy="./img/main/top-slider/mobile-slide1.jpg" alt="" />
                 <div class="main-slider__controls">
                   <div class="main-slider__title">
                     Какая-либо услуга в две строки
@@ -188,7 +198,8 @@
                 </div>
               </div>
               <div class="main-slider__item">
-                <img data-lazy="./img/main/top-slider/slide3.jpg" alt="" />
+                <img class="main-slider__img" data-lazy="./img/main/top-slider/slide3.jpg" alt="" />
+                <img data-lazy="./img/main/top-slider/mobile-slide1.jpg" alt="" />
                 <div class="main-slider__controls">
                   <div class="main-slider__title">
                     Какая-либо услуга в две строки
@@ -203,7 +214,8 @@
                 </div>
               </div>
               <div class="main-slider__item">
-                <img data-lazy="./img/main/top-slider/slide4.jpg" alt="" />
+                <img class="main-slider__img" data-lazy="./img/main/top-slider/slide4.jpg" alt="" />
+                <img data-lazy="./img/main/top-slider/mobile-slide1.jpg" alt="" />
                 <div class="main-slider__controls">
                   <div class="main-slider__title">
                     Какая-либо услуга в две строки
@@ -272,6 +284,7 @@
               </a>
             </div>
           </article>
+
           <section class="advantages">
             <div class="advantages__header">
               <h2 class="advantages__title title">Преимущества клиники</h2>

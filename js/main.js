@@ -22,6 +22,16 @@ $(document).ready(function () {
     centerMode: false,
     variableWidth: false,
     fade: false,
+    responsive: [
+      {
+        breakpoint:376,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+    ],
   });
   $(".feedback-slider").slick({
     slidesToShow: 1,
@@ -72,10 +82,12 @@ $(document).ready(function () {
   updateProgress();
 })
 
+
 // select
 const element = document.querySelector('.select-box');
 const choices = new Choices(element, {
   searchEnabled: false,
+  allowHTML: true
 });
 
 
@@ -112,7 +124,8 @@ search.addEventListener('click', ()=> {
   phone.style.display = gaze.style.display = search.style.display = 'none'
 })
 
-searchBtn.addEventListener('click', ()=> {
+searchBtn.addEventListener('click', (e)=> {
+  e.preventDefault()
   searchBlock.style.display = 'none'
   phone.style.display = gaze.style.display = search.style.display = 'flex'
 })

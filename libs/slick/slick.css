@@ -150,7 +150,6 @@
 }
 .main-slider__title {
   margin-top: 56px;
-
   font-size: 40px;
   font-weight: 600;
   line-height: 140%;
@@ -245,6 +244,67 @@
   stroke-dasharray: 125.66; /* Длина окружности (2 * π * r) */
   stroke-dashoffset: 125.66; /* Начальное заполнение круга */
   transition: stroke-dashoffset 0.3s;
+}
+
+@media (max-width: 376px) {
+  .main-slider__item {
+    height: 400px;
+    /* clip-path: */
+  }
+
+  .main-slider__controls {
+    top: 80px;
+    left: 20px;
+    width: 295px;
+    height: 196px;
+  }
+  .main-slider__title {
+    width: 230px;
+    height: 56px;
+    font-size: 20px;
+    margin: 0;
+  }
+  .main-slider__text {
+    height: 60px;
+    margin-top: 12px;
+
+    color: rgb(44, 49, 54);
+    /* font-family: Lato; */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+
+    -webkit-line-clamp: 3;
+  }
+  .main-slider__button {
+    width: 150px;
+    margin-top: 24px;
+  }
+
+  .slider-top .slick-arrow {
+    display: none !important;
+  }
+  .slider-top__dots .slick-dots {
+    top: 40px;
+    left: 20px;
+    height: 16px;
+  }
+
+  .progress-bar {
+    top: 11.5%;
+    right: -0.8%;
+  }
+  .progress-bar__ring {
+    width: 52px !important;
+    height: 52px !important;
+  }
+  .progress-bar__text-current {
+    left: -13px;
+  }
+  .progress-bar__text-total {
+    left: 0px;
+    top: -8px;
+  }
 }
 
 /* ================= */
@@ -445,6 +505,12 @@
 .news .slick-arrow.slick-next {
   left: 1232px;
   top: -52px;
+}
+
+@media (max-width: 376px) {
+  .news-slider .slick-list {
+    height: 466px;
+  }
 }
 
 /* ================= */
